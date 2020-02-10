@@ -1,0 +1,25 @@
+{
+  "name": "robswebsite",
+  "version": "0.0.1",
+  "description": "personal website",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "tailwind build css/style.css -o stylesheet.css"
+  },
+  "keywords": [
+    "CV",
+    "website",
+    "rob",
+    "gannon"
+  ],
+  "author": "RobTheThief",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RobTheThief/RobsWebSite/issues"
+  },
+  "homepage": "https://github.com/RobTheThief/RobsWebSite#readme"
+}
