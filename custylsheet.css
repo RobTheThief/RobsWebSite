@@ -1,0 +1,32 @@
+.centerThisElement
+{
+  display: inline-block;
+}
+
+.centerElementsInContainer
+{
+text-align: center;
+}
+
+.fixedImageOfMe
+{
+  width: 311px;
+}
+
+.HPText
+{
+  width: 800px;
+}
+
+.buttonCustom {
+color: #000 !important;
+text-decoration: none;
+transition: all 0.4s ease 0s;
+}
+
+.buttonCustom:hover {
+color: #000 !important;
+background: #fff;
+border-color: #1a202c !important;
+transition: all 0.5s ease 0s;
+}
