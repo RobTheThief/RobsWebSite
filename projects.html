@@ -1,7 +1,7 @@
 
 
 <html class = "centerElementsInContainer bg-white">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head class="centerThisElement">
   <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="css/oldcssbkupb4tailwind.css">
@@ -13,33 +13,32 @@
 
 <body >
 
-       <nav class=" min-w-40 w-3/5 centerThisElement border-2 border-t-0 border-l-0 border-r-0 border-black p-4 bg-yellow-500">
-         <a href="index.html"class="buttonCustom bg-yellow-400 font-semibold py-2 px-4 border-2 border-black rounded">Home</a>
-         <a href="info.html" class="buttonCustom bg-yellow-400 font-semibold py-2 px-4 border-2 border-black rounded">Info</a>
-         <a href="media.html" class="buttonCustom bg-yellow-400 font-semibold py-2 px-4 border-2 border-black rounded">Media</a>
-         <a href="projects.html" class="buttonCustom bg-yellow-400 font-semibold py-2 px-4 border-2 border-black rounded">Projects</a>
-         <a href="contact.html" class="buttonCustom bg-yellow-400 font-semibold py-2 px-4 border-2 border-black rounded">Contact</a>
-       </nav>
-
-  <br>
-
-<main class ="w-3/5  centerThisElement bg-gray-200">
+  <nav class="fixed lg:w-4/5 sm:w-full border-2 border-t-0 border-l-0 border-r-0 border-black lg:p-4 sm:p-10">
+    <a href="index.html"class="buttonCustom font-semibold pb-3 pt-0 px-4">Home</a>
+    <a href="info.html" class="buttonCustom font-semibold pb-3 pt-0 px-4">Info</a>
+    <a href="media.html" class="buttonCustom font-semibold pb-3 pt-0 px-4">Media</a>
+    <a href="projects.html" class="buttonCustom font-semibold pb-3 pt-0 px-4">Projects</a>
+    <a href="contact.html" class="buttonCustom font-semibold pb-3 pt-0 px-4">Contact</a>
+  </nav>
 
 
-  <div class="pl-4">
-    <br>
-    <a href="https://github.com/RobTheThief" class="underline text-blue-500" target="_blank">GitHub Projects Link</a><br></br>
+
+<main class ="lg:w-4/5 sm:w-full centerThisElement bg-gray-200">
+
+  <div class="sm:p-20 lg:p-10 inline-block">
+
+    <a href="https://github.com/RobTheThief" class="w-full text-left lg:pt-5 sm:pt-0 sm:text-5xl lg:text-base underline text-blue-500" target="_blank">GitHub Projects Link</a>
   </div>
 
   <div class="border-black border-2 centerElementsInContainer">
-        <div class="w-full border-black centerThisElement bg-fixed bg-center bg-no-repeat" style="background-image: url(img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg)"><br></br><br></br><br></br></div>
+        <div class="w-full border-black centerThisElement bg-fixed bg-center" style="background-image: url(img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg)"><br></br><br></br><br></br></div>
   </div>
 <br></br>
 
-<table>
-<tr>
+
 <!-- PROJECT CALCULATOR -->
-<td>  <div class = "calclDiv" style = "position:relative; left:10px;">
+<div class = "projDiv flex lg:flex-row text-center">
+  <div class = "calclDiv inline-block" style = "position:relative; left:10px;">
 
       <h3>   <!-- It's --></h3><br>
                    <h1 style = "position:relative; left:10px;" class="font-serif font-bold">ROBULATOR</h1><br>
@@ -69,9 +68,9 @@
 
        <table style = "position:relative; left:20px; position:relative; top:-15px;">
 
-         <button style = "position:relative; top:-20px; position:relative; left:10px;" type="button" id="buttons2" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
+         <button style = "position:relative; top:-20px; position:relative; left:-62px;" type="button" id="buttons2" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
 
-         <br></br>
+         <br>
 
          <tr class="grid grid-cols-4 gap-2">
           <td><button type="button" id="buttons3" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="clear1()">C</button></td>
@@ -112,31 +111,33 @@
         </tr>
 
        </table>
-     </div> <!-- End Container--> </td>
-<!-- vertical-align: text-top; -->
-     <td class = "p-4 pt-0 inline-block align-text-top "><p class = "">After learning the basics of CSS, HTML and JavaScript<br>
-                                                                        I decided that my first project, as it is for many, should be a calculator.
-                                                                        The only framework used was TailWindCSS.<br></br>
+     </div> <!-- End Container-->
 
-                                                                        It has 2 modes: Algebra and Arithmetic mode. In Algebra mode, which is the
-                                                                        default and the standard for most calculators, multiplication and division
+<!-- vertical-align: text-top; -->
+     <div class = "p-4 pt-0 inline-block align-text-top text-left"><p class = "lg:pl-10"><b>After learning the basics of CSS, HTML and JavaScript
+                                                                        I decided that my first project, as it is for
+                                                                        many, should be a calculator. The only framework
+                                                                        used was TailWindCSS.<br></br>
+
+                                                                        It has 2 modes: Algebra and Arithmetic mode. In
+                                                                        Algebra mode, which is the default and the standard
+                                                                        for most calculators, multiplication and division
                                                                         is done before addition and subtraction.<br></br>
 
-                                                                        Atrithmatic mode essentially
-                                                                        calculats from left to right.  The idea was to reflect how you might calculate
-                                                                        something in a story. E.g. I had 4 biscuits and then Mom gave me 2 more, but
-                                                                        Tom stole 3.  Harry then said that if I gave him one now he would give me back
-                                                                        as many as i had left again. I would then have 4 biscuits. 4+2-3-1*2 = 4.  In
-                                                                        Algebra mode the answer would be 1. <br></br>
-                                                                        <a href="https://github.com/RobTheThief/Calculator2.git" class="underline text-blue-500" target="_blank">GitHub Repository</a><br></br>
-                                                                      </p></td>
-
-</tr>
-</table>
+                                                                        Atrithmatic mode essentially calculats from left
+                                                                        to right.  The idea was to reflect how you might calculate
+                                                                        something in a story. E.g. I had 4 biscuits and then Mom
+                                                                        gave me 2 more, but Tom stole 3.  Harry then said that
+                                                                        if I gave him one now he would give me back as many
+                                                                        as i had left again. I would then have 4 biscuits.
+                                                                        4+2-3-1*2 = 4.  In Algebra mode the answer would be 1.<br></br>
+                                                                        <a href="https://github.com/RobTheThief/Calculator.git" class="underline text-blue-500" target="_blank">GitHub Repository</a><br></br>
+                                                                      </p></div>
+</div>
 <br></br>
 
 <div class="border-black border-2 centerElementsInContainer">
-      <div class="w-full border-black centerThisElement bg-fixed bg-center bg-no-repeat" style="background-image: url(img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg)"><br></br><br></br><br></br></div>
+      <div class="w-full border-black centerThisElement bg-fixed bg-center" style="background-image: url(img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg)"><br></br><br></br><br></br></div>
 </div>
   <br></br><br></br><br></br><br></br><br></br><br></br>
 

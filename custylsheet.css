@@ -8,25 +8,65 @@
 text-align: center;
 }
 
-.fixedImageOfMe
-{
-  width: 311px;
-}
-
-.HPText
-{
-  width: 800px;
-}
-
 .buttonCustom {
-color: #000 !important;
-text-decoration: none;
-transition: all 0.4s ease 0s;
+  background: url("img/hoverbutton.jpg") no-repeat;
+  font-family: "Courier New", Courier, monospace;
+
 }
 
 .buttonCustom:hover {
-color: #000 !important;
-background: #fff;
-border-color: #1a202c !important;
-transition: all 0.5s ease 0s;
+  background-position: 0% 80%;
+  transition:background-position 0.3s ease;
+
+}
+
+.buttonCustom:focus {
+    outline: 0;
+}
+
+nav {
+  background-color: #00a0e5;
+  z-index : 1;
+  position:relative; left:10%;
+}
+
+main {
+  padding-top: 3%;
+}
+
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  nav {
+    position:relative; left:0%;
+    height: 5%;
+    padding-top: 2%;
+    padding-bottom: 20%;
+
+  }
+}
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  main {
+    padding-top: 25%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  .buttonCustom {
+    font-size: 0.878rem;
+    background: url("img/hoverbuttonMobile.jpg") no-repeat;
+
+  }
+}
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  .projDiv {
+    flex-direction: column;
+
+  }
 }
