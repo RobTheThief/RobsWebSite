@@ -1,22 +1,21 @@
-.centerThisElement
-{
-  display: inline-block;
-}
+@import url(https://fonts.googleapis.com/css?family=Oxanium&display=swap);
 
-.centerElementsInContainer
-{
-text-align: center;
+.fixedPic{
+  background-image: url("img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg")
 }
 
 .buttonCustom {
-  background: url("img/hoverbutton.jpg") no-repeat;
-  font-family: "Courier New", Courier, monospace;
+  background: url("img/hoverbuttonBlackBluTop.jpg") no-repeat;
+  font-family: 'Oxanium', ;
+  color: white;
+  background-position: 0% 60%;
+  transition:background-position 0.3s ease;
 
 }
 
 .buttonCustom:hover {
-  background-position: 0% 80%;
-  transition:background-position 0.3s ease;
+  background-position: 0% -33%;
+
 
 }
 
@@ -24,32 +23,84 @@ text-align: center;
     outline: 0;
 }
 
+.menuButton {
+  border-width: 1px;
+  border-color:black;
+  border-radius: 50px 20px;
+}
+
+.menu {
+  background: url("img/hoverbuttonBlackBluTop.jpg") no-repeat;
+  font-family: 'Oxanium', ;
+  color: white;
+  background-position: 0% 60%;
+  transition:background-position 0.3s ease;
+
+}
+
+.menu:hover {
+  background-position: 0% -33%;
+
+
+}
+
+.menu:focus {
+    outline: 0;
+}
+
 nav {
-  background-color: #00a0e5;
+  background-color: black;
   z-index : 1;
   position:relative; left:10%;
+  border-color: #00CED1;
+  border-radius: 0.25rem;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-color: #00CED1;
+  border-radius: 50px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  top: 28px;
+  left: -20px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-bottom: 4px solid #00CED1;
+  border-radius: 0.25rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
 
 main {
   padding-top: 3%;
 }
 
-
 @media only screen and (max-width:840px) {
   /* For mobile phones: */
   nav {
     position:relative; left:0%;
-    height: 5%;
-    padding-top: 2%;
-    padding-bottom: 20%;
-
+    height: 10%;
+    padding-top: 7%;
+    padding-bottom: 6%;
   }
 }
 
 @media only screen and (max-width:840px) {
   /* For mobile phones: */
   main {
-    padding-top: 25%;
+    padding-top: 10%;
     width: 100%;
   }
 }
@@ -58,8 +109,9 @@ main {
   /* For mobile phones: */
   .buttonCustom {
     font-size: 0.878rem;
-    background: url("img/hoverbuttonMobile.jpg") no-repeat;
-
+  /*  background: url("img/hoverbuttonMobileBlack.jpg") no-repeat;*/
+    opacity: 0;
+    display:none;
   }
 }
 
@@ -68,5 +120,12 @@ main {
   .projDiv {
     flex-direction: column;
 
+  }
+}
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  .fixedPic {
+    background-image: url("img/newCodeBg.jpg")
   }
 }
