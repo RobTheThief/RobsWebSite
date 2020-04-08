@@ -27,7 +27,7 @@
 	font-size: 14px;
 }
 
-.container {
+.contactContainer {
 
 	width:350px;
 	margin:0 auto;
@@ -45,7 +45,7 @@
 }
 
 #contact h3 {
-	color: #F96;
+	color: black;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
@@ -65,7 +65,7 @@ fieldset {
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:100%;
-	border:1px solid #CCC;
+	border:1px solid #696969;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -75,7 +75,7 @@ fieldset {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+	border:1px solid black;
 }
 
 #contact textarea {
@@ -106,7 +106,7 @@ fieldset {
 
 #contact input:focus, #contact textarea:focus {
 	outline:0;
-	border:1px solid #999;
+	border:1px solid #00CED1;
 }
 ::-webkit-input-placeholder {
  color:#888;

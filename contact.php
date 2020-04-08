@@ -14,38 +14,38 @@
 
 <body >
 
-  <nav class="flex items-center align-center text-left fixed w-full lg:w-4/5 sm:w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
-    <div class="dropdown text-left border-4">
-      <span class = "menu menuButton text-left font-semibold px-4">Menu</span>
-      <div class="dropdown-content bg-black">
-        <a href="index.html"class="menu font-semibold pb-3 pt-0 px-4">Home</a>
-        <a href="about.html" class="menu font-semibold pb-3 pt-0 px-4">About</a>
-        <a href="projects.html" class="menu font-semibold pb-3 pt-0 px-4">Projects</a>
-        <a style = "color:#00CED1;" href="contact.php" class="menu font-semibold pb-3 pt-0 px-4">Contact</a>
+  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+
+      <div class="dropdown text-left border-4">
+      <span id = "menuBtn" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
+        <div class="dropdown-content bg-black">
+          <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
+          <a href="index.html#about" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+          <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
+          <a style = "color:#00CED1;" href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
+        </div>
       </div>
-    </div>
-    <a href="index.html"class="buttonCustom font-semibold px-4">Home</a>
-    <a href="about.html" class="buttonCustom font-semibold  px-4">About</a>
-    <a href="projects.html" class="buttonCustom font-semibold px-4">Projects</a>
-    <a style = "color:#00CED1;" href="contact.php" class="buttonCustom font-semibold px-4">Contact</a>
-  </nav>
+
+      <a href="index.html"class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
+      <a href="index.html#about" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+      <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
+      <a style = "color:#00CED1;" href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
+      <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
+
+    </nav>
 
 
-<main class ="lg:w-4/5 sm:w-full inline-block bg-gray-200">
+<main class ="w-full inline-block bg-gray-200">
 
 
-  <div class="p-10 inline-block">
-    <br>
-    <p class="w-full text-left sm:text-3xl lg:text-base">Please leave me a message if you have any questions about my work. <br>I would love to hear from you!</p>
+  <div class="px-10 pb-0 flex inline-block">
+    <p class="w-full text-center sm:text-2xl lg:text-base"><b>Please leave me a message if you have any questions about my work. <br>I would love to hear from you!</p>
   </div>
 
-  <div class="border-black rounded border-2 text-center">
-        <div class="fixedPic w-full inline-block bg-fixed bg-center"><br></br><br></br><br></br></div>
-  </div>
 
-  <div class="sm:p-20 lg:p-10 inline-block">
+  <div class="inline-block">
 
-    <div class="container">
+    <div class="contactContainer">
       <form id="contact" action = "<?= $_SERVER['PHP_SELF']; ?>" method = "post">
         <h3>Quick Contact</h3>
         <fieldset>
@@ -76,12 +76,29 @@
     </p><br>
   </div>
 
-  <br></br><br></br><br></br><br></br><br></br><br></br>
+  <br></br><br></br>
 
 </main>
 
-<footer>
-
+<footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
+  <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
+  <div class = "items-center flex text-right w-full" style = "width: 20%;">
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
+        <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">Linkedin</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/github.png" alt="github" height="1" width="23" align = "right">
+        <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">GitHub</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
+        <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Twitter</span>
+    </div>
+  </div>
 </footer>
 
 

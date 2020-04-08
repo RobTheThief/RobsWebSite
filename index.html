@@ -4,61 +4,163 @@
 <head class="inline-block">
   <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="stylesheet.css">
-
+  <link rel="stylesheet" media="screen" href="css/particlestyle.css">
 
 </head>
 
-
 <body>
 
-  <nav class="flex items-center align-center text-left fixed w-full lg:w-4/5 sm:w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+  <div class="text-white" id="particles-js">
+    <a class = "welcomeMsg text-white" href="#myHeader">Welcome to my Webpage.<br> I'm <span style ="color:#00CED1;"><b>Rob Gannon</b></span>.<br>Click here to view my work.</a>
+  </div>
+
+<nav id="myHeader" class="sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+
     <div class="dropdown text-left border-4">
-      <span class = "menu menuButton text-left font-semibold px-4 ">Menu</span>
+      <span class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
       <div class="dropdown-content bg-black">
-        <a style = "color:#00CED1;" href="index.html"class="menu font-semibold pb-3 pt-0 px-4">Home</a>
-        <a href="about.html" class="menu font-semibold pb-3 pt-0 px-4">About</a>
-        <a href="projects.html" class="menu font-semibold pb-3 pt-0 px-4">Projects</a>
-        <a href="contact.php" class="menu font-semibold pb-3 pt-0 px-4">Contact</a>
+        <a style = "color:#00CED1;" href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
+        <a href="#about" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+        <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
+        <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
       </div>
     </div>
-    <a style = "color:#00CED1;" href="index.html"class="buttonCustom font-semibold px-4">Home</a>
-    <a href="about.html" class="buttonCustom font-semibold  px-4">About</a>
-    <a href="projects.html" class="buttonCustom font-semibold px-4">Projects</a>
-    <a href="contact.php" class="buttonCustom font-semibold px-4">Contact</a>
+
+    <a style = "color:#00CED1;" href="index.html" class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
+    <a href="#about" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+    <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
+    <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
+    <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
+
   </nav>
 
-<main class ="lg:w-4/5 sm:w-full inline-block bg-gray-200">
+<main class ="w-full inline-block bg-gray-200">
 
 
-  <div class="sm:p-20 sm:pt-0 lg:p-10 inline-block">
-
-    <p class="inline-block lg:w-1/2 sm:w-full text-left lg:pt-5 sm:pt-0 p-4 sm:text-3xl lg:text-base"> <br><b>Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.<br></br>
-    </p>
+  <div id= "about" class="py-2 px-10 text-left">
+    <p class="inline-block lg:w-2/3 sm:w-full text-left p-4 sm:text-2xl lg:text-base"><b>Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.<br></br></p>
   </div>
 
-  <div class=" border-black rounded border-2 text-center">
-        <div class="fixedPic w-full inline-block bg-fixed bg-center" ><br></br><br></br><br></br></div>
+<h1 class = "aboutHeading"><u>About</u></h1>
+
+<div class = "flex-row sm:flex-col">
+  <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
+    <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
+    <p id = "attribText1" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Responsive</span><br><span class = "attribDescription">Tailored to work on any screen or device</span></p>
   </div>
+
+  <div id= "attributes2" class = "text-left inline-block items-center flex-col py-8 preScroll">
+    <img id = "attribSymbol2" src = "img/fastloading.svg" class = "attribSymbol text-center"></img>
+    <p id = "attribText2" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Fast Loading</span><br><span class = "attribDescription">Optimized for quicker load times</span></p>
+  </div>
+
+  <div id= "attributes3" class = "text-left inline-block items-center flex-col py-8 preScroll">
+    <img id = "attribSymbol3" src = "img/easeofuse.svg" class = "attribSymbol text-center"></img>
+    <p id = "attribText3" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Ease of Use</span><br><span class = "attribDescription">Intuitively designed for easy navigation</span></p>
+  </div>
+
+  <div id= "attributes4" class = "text-left inline-block items-center flex-col py-8 preScroll">
+    <img id = "attribSymbol4" src = "img/customdesign.svg" class = "attribSymbol text-center"></img>
+    <p id = "attribText4" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Custom Design</span><br><span class = "attribDescription">Can be made to any specification</span></p>
+
+  </div>
+</div>
+
+<div class="sm:p-20 lg:p-10 text-left">
+  <p class="font-bold inline-block sm:w-full text-left pb-3 pt-0 p-4 sm:text-2xl lg:text-base">this is where we have info!!!!</p>
+</div>
+
+<div class="sm:p-20 lg:p-10 text-left">
+  <p class="font-bold inline-block w-full text-left pb-3 pt-0 p-4 sm:text-2xl lg:text-base"><br></br>.....more info!
+  </p><br>
+</div>
+
+<div class ="borderTrans bg-black"><span class = "transBorderHead text-white"><b>This is where</span><p class = "borderTransText text-white"><br>We put some interesting stuff the say.</p></div>
+
+
 <br>
-  <div class="lg:w-1/2 sm:w-full sm:p-20 lg:p-10 inline-block text-left">
-    <a href="https://github.com/RobTheThief" class="w-full text-left lg:pt-5 sm:pt-0 sm:text-3xl lg:text-base underline text-blue-600" target="_blank">GitHub Projects Link</a><br>
-    <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" class="w-full text-left lg:pt-5 sm:pt-0 sm:text-3xl lg:text-base underline text-blue-600" target="_blank">Linkedin</a><br>
+  <div class="py-5 px-10 text-left ">
+    <a href="https://github.com/RobTheThief" class="inline-block lg:w-2/3 sm:w-full text-left py-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank">GitHub Projects Link</a><br>
+    <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" class="inline-block lg:w-2/3 sm:w-full text-left py-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank">Linkedin</a><br>
   </div>
 
-  <br></br><br></br><br></br><br></br><br></br><br></br>
+  <br></br><br></br><br></br>
 
 </main>
 
-<footer>
-
+<footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
+  <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
+  <div class = "items-center flex text-right w-full" style = "width: 20%;">
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
+        <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">Linkedin</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/github.png" alt="github" height="1" width="23" align = "right">
+        <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">GitHub</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
+        <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Twitter</span>
+    </div>
+  </div>
 </footer>
 
+<!-- scripts -->
 
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-    </script>
+window.onscroll = function() {myFunction()};
 
+var attributes1 = document.getElementById("attributes1");
+var attributes2 = document.getElementById("attributes2");
+var attributes3 = document.getElementById("attributes3");
+var attributes4 = document.getElementById("attributes4");
+var attribSymbol1 = document.getElementById("attribSymbol1");
+var attribSymbol2 = document.getElementById("attribSymbol2");
+var attribSymbol3 = document.getElementById("attribSymbol3");
+var attribSymbol4 = document.getElementById("attribSymbol4");
+var attribText1 = document.getElementById("attribText1");
+var attribText2 = document.getElementById("attribText2");
+var attribText3 = document.getElementById("attribText3");
+var attribText4 = document.getElementById("attribText4");
+
+var scrollTrigger = attributes1.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset = scrollTrigger) {
+    attributes1.classList.add("attribContainer1");
+    attribSymbol1.classList.add("attribSymbol");
+    attributes1.classList.remove("preScroll");
+    setTimeout(function(){ attribText1.classList.add("attribText"); }, 2000);
+
+    setTimeout(function(){
+    attributes2.classList.add("attribContainer2");
+    attributes2.classList.remove("preScroll");
+    attribSymbol2.classList.add("attribSymbol"); }, 1000);
+    setTimeout(function(){ attribText2.classList.add("attribText");}, 3000);
+
+
+    setTimeout(function(){ attributes3.classList.add("attribContainer3");
+    attributes3.classList.remove("preScroll");
+    attribSymbol3.classList.add("attribSymbol");}, 2000);
+    setTimeout(function(){ attribText3.classList.add("attribText");}, 4000);
+
+    setTimeout(function(){ attributes4.classList.add("attribContainer4");
+    attributes4.classList.remove("preScroll");
+    attribSymbol4.classList.add("attribSymbol");}, 3000);
+    setTimeout(function(){ attribText4.classList.add("attribText");}, 5000);
+  }
+}
+
+</script>
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
 
 
   </body>

@@ -13,32 +13,32 @@
 
 <body >
 
-  <nav class="flex items-center align-center text-left fixed w-full lg:w-4/5 sm:w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
-    <div class="dropdown text-left border-4 ">
-      <span class = "menu menuButton text-left font-semibold px-4">Menu</span>
-      <div class="dropdown-content bg-black">
-        <a href="index.html"class="menu font-semibold pb-3 pt-0 px-4">Home</a>
-        <a href="about.html" class="menu font-semibold pb-3 pt-0 px-4">About</a>
-        <a style = "color:#00CED1;" href="projects.html" class="menu font-semibold pb-3 pt-0 px-4">Projects</a>
-        <a href="contact.php" class="menu font-semibold pb-3 pt-0 px-4">Contact</a>
+  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+
+      <div class="dropdown text-left border-4">
+      <span id = "menuBtn" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
+        <div class="dropdown-content bg-black">
+          <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
+          <a href="index.html#about" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+          <a style = "color:#00CED1;" href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
+          <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
+        </div>
       </div>
-    </div>
-    <a href="index.html"class="buttonCustom font-semibold px-4">Home</a>
-    <a href="about.html" class="buttonCustom font-semibold  px-4">About</a>
-    <a style = "color:#00CED1;" href="projects.html" class="buttonCustom font-semibold px-4">Projects</a>
-    <a href="contact.php" class="buttonCustom font-semibold px-4">Contact</a>
-  </nav>
+
+      <a href="index.html"class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
+      <a href="index.html#about" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+      <a style = "color:#00CED1;" href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
+      <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
+      <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
+
+    </nav>
 
 
 
-<main class ="lg:w-4/5 sm:w-full padProjMain inline-block bg-gray-200">
-<br>
-  <div class="sm:p-20 lg:p-5 inline-block">
-    <a href="https://github.com/RobTheThief" class="w-full text-left lg:pt-5 sm:p-10 md:p-10 sm:text-5xl lg:text-base underline text-blue-600" target="_blank"><br><b>GitHub Projects Link</a>
-  </div>
-<br>
-  <div class="border-black rounded border-2 text-center">
-        <div class="fixedPic w-full inline-block bg-fixed bg-center"><br></br><br></br><br></br></div>
+<main class ="w-full inline-block bg-gray-200">
+
+  <div class="px-10 inline-block">
+    <a href="https://github.com/RobTheThief" class="w-full text-left lg:pt-5 sm:pt-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank"><b>GitHub Projects Link</a>
   </div>
 <br></br>
 
@@ -48,7 +48,7 @@
   <div class = "calclDiv inline-block" style = "position:relative; left:10px;">
 
       <h3>   <!-- It's --></h3><br>
-                   <h1 style = "position:relative; left:10px;" class="font-serif font-bold">ROBULATOR</h1><br>
+                   <h1 style = "color: #00CED1; position:relative; left:10px;" class="font-serif font-bold text-xl text-left">ROBULATOR</h1><br>
 
                      <h3>    <!-- ...my two-way calculator!--></h3>
 
@@ -57,13 +57,13 @@
 
           <table>
             <tr>
-                <td>  <div class="font-serif" id="modeDisp"></div> </td>
+                <td>  <div style = "color: #00CED1;" class="font-serif" id="modeDisp"></div> </td>
 
                 <td><label class="switch"><input type="checkbox" id="modeCheckbox" onclick="calcMode()" ><span class="slider round"></span></label></td>
             </tr>
           </table>
 
-          <div class="text-left" id="modeExample"></div><br>
+          <div style = "color: #00CED1;" class="text-left" id="modeExample"></div><br>
 
           <div id="IO">
               <input class="pl-2" type="text" name="input" id="input" placeholder="INPUT">
@@ -73,55 +73,54 @@
        </form>
 <br>
 
-       <table style = "position:relative; left:20px; position:relative; top:-15px;">
+       <table style = "left:20px; position:relative; top:-15px;">
 
-         <button style = "position:relative; top:-20px; position:relative; left:-62px;" type="button" id="buttons2" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
+         <button style = "color: #00CED1; top:-20px; position:relative; left:-62px;" type="button" id="buttons2" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
 
          <br>
 
          <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="buttons3" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="clear1()">C</button></td>
-          <td><button type="button" id="buttons4" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="multiplyIt()">*</button></td>
-          <td><button type="button" id="buttons5" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="divideIt()">/</button></td>
-          <td><button type="button" id="buttons19" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="percentage()">%</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons3" class="font-bold text-lg py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="clear1()">C</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons4" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="multiplyIt()">*</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons5" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="divideIt()">/</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons19" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="percentage()">%</button></td>
 
         </tr>
-
          <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="buttons16" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="decimal()">.</button></td>
-          <td><button type="button" id="buttons18" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="plusNum()">+</button></td>
-          <td><button type="button" id="buttons17" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="minusNum()">-</button></td>
-          <td><button type="button" id="buttons20" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-3 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="backButton()">BK</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons16" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="decimal()">.</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons18" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="plusNum()">+</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons17" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="minusNum()">-</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons20" class="font-extrabold py-1 px-3 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="backButton()">BK</button></td>
         </tr>
 
         <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="buttons6" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num1()">1</button></td>
-          <td><button type="button" id="buttons7" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num2()">2</button></td>
-          <td><button type="button" id="buttons8" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num3()">3</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons6" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num1()">1</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons7" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num2()">2</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons8" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num3()">3</button></td>
         </tr>
 
         <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="buttons9" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num4()">4</button></td>
-          <td><button type="button" id="buttons10" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num5()">5</button></td>
-          <td><button type="button" id="buttons11" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num6()">6</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons9" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num4()">4</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons10" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num5()">5</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons11" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num6()">6</button></td>
         </tr>
 
         <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="buttons12" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num7()">7</button></td>
-          <td><button type="button" id="buttons13" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num8()">8</button></td>
-          <td><button type="button" id="buttons14" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num9()">9</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons12" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num7()">7</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons13" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num8()">8</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons14" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num9()">9</button></td>
         </tr>
 
         <tr class="grid grid-cols-4 gap-2">
           <td><button type="button" id="ghostButton" class="bg-transparent text-transparent cursor-not-allowed py-2 px-2 rounded" >0</button></td>
-          <td><button type="button" id="buttons15" class="bg-gray-400 hover:bg-gray-300 text-gray-800 font-bold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num0()">0</button></td>
+          <td><button style = "color: #00CED1;" type="button" id="buttons15" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num0()">0</button></td>
         </tr>
 
        </table>
      </div> <!-- End Container-->
 
 <!-- vertical-align: text-top; -->
-     <div class = "p-4 pt-0 inline-block align-text-top text-left"><p class = "lg:pl-10"><br><b>After learning the basics of CSS, HTML and JavaScript
+     <div class = "p-4 pl-1 pt-0 inline-block align-text-top text-left"><p class = "lg:pl-10"><br><b>After learning the basics of CSS, HTML and JavaScript
                                                                         I decided that my first project, as it is for
                                                                         many, should be a calculator. The only framework
                                                                         used was TailWindCSS.<br></br>
@@ -131,27 +130,40 @@
                                                                         for most calculators, multiplication and division
                                                                         is done before addition and subtraction.<br></br>
 
-                                                                        Robulator mode essentially calculats from left
+                                                                        Robulator mode essentially calculates from left
                                                                         to right.  The idea was to reflect how you might calculate
                                                                         something in a story. E.g. I had 4 biscuits and then Mom
                                                                         gave me 2 more, but Tom stole 3.  Harry then said that
                                                                         if I gave him one now he would give me back as many
                                                                         as i had left again. I would then have 4 biscuits.
                                                                         4+2-3-1*2 = 4.  In Algebra mode the answer would be 1.<br></br>
-                                                                        <a href="https://github.com/RobTheThief/Calculator.git" class="sm:text-3xl lg:text-base underline text-blue-600" target="_blank">GitHub Repository</a><br></br>
+                                                                        <a href="https://github.com/RobTheThief/Calculator.git" class="sm:text-2xl lg:text-base underline text-blue-600" target="_blank">GitHub Repository</a><br></br>
                                                                       </p></div>
 </div>
 <br></br>
 
-<div class="border-black rounded border-2 text-center">
-      <div class="fixedPic w-full inline-block bg-fixed bg-center"><br></br><br></br><br></br></div>
-</div>
-  <br></br><br></br><br></br><br></br><br></br><br></br>
 
 </main>
 
-<footer>
-
+<footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
+  <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
+  <div class = "items-center flex text-right w-full" style = "width: 20%;">
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
+        <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">Linkedin</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/github.png" alt="github" height="1" width="23" align = "right">
+        <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
+        <span class="tooltiptext">GitHub</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
+        <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Twitter</span>
+    </div>
+  </div>
 </footer>
 
 

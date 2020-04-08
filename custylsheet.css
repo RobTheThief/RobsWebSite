@@ -1,22 +1,280 @@
-@import url(https://fonts.googleapis.com/css?family=Oxanium&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 
-.fixedPic{
-  background-image: url("img/markus-spiske-KeFyYzxqmH0-unsplash2.jpg")
+html {
+  scroll-behavior: smooth;
 }
+
+main {
+  top:50%;
+  padding-top: 3%;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  outline: 0;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.aboutHeading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  
+}
+
+.borderTrans {
+  border: 4px solid #00CED1;
+  padding: 10px;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  transition: .8s ease;
+
+}
+
+.borderTrans:hover {
+  border-radius: 0px;
+  transform: border-radius;
+}
+
+.borderTrans:hover .borderTransText {
+  opacity: 1;
+  transform: opacity;
+}
+
+.borderTrans:hover .transBorderHead {
+  top: 0px;
+  transform: top;
+}
+
+.transBorderHead {
+  position:relative;
+  top: 50px;
+  transition: .8s ease;
+}
+
+.attribSymbol {
+  animation-name: initImageFlip;
+  animation-duration: 2s;
+  transition: 2s ease;
+}
+
+.preScrollText {
+  opacity: 0;
+  transition: 5s ;
+}
+
+p.attribText {
+  opacity: 1 ;
+  transform: opacity;
+
+}
+
+.attribContainer1 {
+  right: 0 ;
+  position: relative;
+  animation-name: initImageSlide;
+  animation-duration: 2s;
+}
+
+.attribContainer2 {
+  right: 0 ;
+  position: relative;
+  animation-name: initImageSlide;
+  animation-duration: 2s;
+
+}
+
+.attribContainer3 {
+  right: 0 ;
+  position: relative;
+  animation-name: initImageSlide;
+  animation-duration: 2s;
+
+}
+
+.attribContainer4 {
+  right: 0 ;
+  position: relative;
+  animation-name: initImageSlide;
+  animation-duration: 2s;
+
+}
+
+.preScroll {
+  right: 0;
+  position: relative;
+  opacity:0;
+}
+
+.attribSymbol:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  transition: 2s ease;
+}
+
+@keyframes initImageFlip {
+  0% {transform: scaleX(0);}
+  25% {transform: scaleX(-1);}
+  75%  {transform: scaleX(0);}
+  100% {transform: scaleX(1);}
+  }
+
+@keyframes initImageSlide {
+  0% {right: -100px;}
+  100% {right: 0px;}
+  0% {transform: scaleX(0);}
+  25% {transform: scaleX(-1);}
+  75%  {transform: scaleX(0);}
+  100% {transform: scaleX(1);}
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.borderTransText {
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 120px;
+  position: relative;
+  right: 0px;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.attribSymbol {
+  width: 300px;
+  height: 95px;
+}
+
+.attribTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.attribDescription {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.welcomeMsg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+nav {
+  background-color: black;
+  z-index : 1;
+  border-color: #00CED1;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+footer {
+  background-color: black;
+  z-index : 1;
+  border-color: #00CED1;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.copyright {
+  width: 200%;
+}
+
+/*STICKY NAV BAR*/
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+
 
 .buttonCustom {
-  background: url("img/hoverbuttonBlackBluTop.jpg") no-repeat;
-  font-family: 'Oxanium', ;
   color: white;
-  background-position: 0% 60%;
-  transition:background-position 0.3s ease;
-
 }
 
-.buttonCustom:hover {
-  background-position: 0% -33%;
+.footerlinks {
+width: 10%;
+}
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: #1f2021;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top:-22px;
+  left: -40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: opacity;
+  transition: .3s ease;
+}
+
+.overlayContainer {
+  position: relative;
+}
+
+.logoContainer {
+  position: absolute;
+  right: 0px;
+}
+
+.overlayContainer:hover .overlay {
+  opacity: 0.5;
+  transform: opacity;
+}
+
+.logoContainer:hover .overlay {
+  opacity: 0.5;
+  transform: opacity;
+}
+
+.logo:hover .overlay {
+  opacity: 0.5;
+  transform: opacity;
 }
 
 .buttonCustom:focus {
@@ -27,54 +285,64 @@
   border-width: 1px;
   border-color:black;
   border-radius: 50px 20px;
-}
-
-.menu {
   background: url("img/hoverbuttonBlackBluTop.jpg") no-repeat;
-  font-family: 'Oxanium', ;
+  font-family: 'Raleway', sans-serif;
   color: white;
+  animation-name: menuBtnAnima;
+  animation-duration: 4s;
+  opacity: 1;
   background-position: 0% 60%;
-  transition:background-position 0.3s ease;
-
+  transition:background-position 1.1s ease;
+  display: none;
 }
 
-.menu:hover {
-  background-position: 0% -33%;
-
-
+.menuButton:hover {
+  background-position: 0% -75%;
 }
 
-.menu:focus {
+.menuLabel {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  animation-name: drpMenuBtnAnima ;
+  height: 0%;
+  animation-duration: 5s;
+  animation-fill-mode: none;
+  opacity: 1;
+}
+
+.menuLabel:focus {
     outline: 0;
 }
 
-nav {
-  background-color: black;
-  z-index : 1;
-  position:relative; left:10%;
-  border-color: #00CED1;
-  border-radius: 0.25rem;
+
+.btnCover {
+  position: relative;
+  opacity: 0;
 }
+
 
 .dropdown {
   position: relative;
   display: inline-block;
   border-color: #00CED1;
   border-radius: 50px 20px;
+  display: none;
 }
 
 .dropdown-content {
   display: none;
-  top: 28px;
+  top: 30px;
   left: -20px;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 360px;
+  min-width: 135px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
   border-bottom: 4px solid #00CED1;
   border-radius: 0.25rem;
+  animation-name: dropAnima;
+  animation-duration: 1.1s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -82,10 +350,23 @@ nav {
   flex-direction: column;
 }
 
-
-main {
-  padding-top: 3%;
+@keyframes menuBtnAnima {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
+
+@keyframes dropAnima{
+  from {height: 0px;}
+  to {height: 125px;}
+}
+
+@keyframes drpMenuBtnAnima {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  from {height: 0%;}
+  to {height: 100%;}
+}
+
 
 @media only screen and (max-width:840px) {
   /* For mobile phones: */
@@ -94,6 +375,22 @@ main {
     height: 10%;
     padding-top: 7%;
     padding-bottom: 6%;
+  }
+
+  .menuButton {
+    display: inline-block;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .welcomeMsg {
+    font-size: 30px;
+  }
+
+  .copyright {
+    width: 150%;
   }
 }
 
@@ -105,11 +402,10 @@ main {
   }
 }
 
-@media only screen and (max-width:840px) {
+@media only screen and (max-width:420px) {
   /* For mobile phones: */
   .buttonCustom {
     font-size: 0.878rem;
-  /*  background: url("img/hoverbuttonMobileBlack.jpg") no-repeat;*/
     opacity: 0;
     display:none;
   }
@@ -123,9 +419,17 @@ main {
   }
 }
 
-@media only screen and (max-width:840px) {
+@media only screen and (max-width:420px) {
   /* For mobile phones: */
-  .fixedPic {
-    background-image: url("img/newCodeBg.jpg")
+  .dropdown-content{
+    min-width: 420px;
+  }
+
+  .welcomeMsg {
+    font-size: 25px;
+  }
+
+  .copyright {
+    width: 75%;
   }
 }
