@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="css/oldcssbkupb4tailwind.css">
   <link rel="stylesheet" href="stylesheet.css">
-
+  <link rel="icon" href="img/favicon.png">
 
 </head>
 
@@ -16,17 +16,17 @@
   <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
 
       <div class="dropdown text-left border-4">
-      <span id = "menuBtn" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
-        <div class="dropdown-content bg-black">
+      <span id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
+        <div id="dropdownContainer" class="dropdown-container bg-black">
           <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
-          <a href="index.html#about" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+          <a href="index.html#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
           <a style = "color:#00CED1;" href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
           <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
         </div>
       </div>
 
       <a href="index.html"class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
-      <a href="index.html#about" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+      <a href="index.html#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
       <a style = "color:#00CED1;" href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
       <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
       <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
@@ -202,6 +202,30 @@ hitsEnter.addEventListener("keyup", function(event) {
    submit1();
  }
 });
+
+window.onscroll = function() {scrolling()};
+var buttonState = 0;
+//Menu Button
+function menuBtn() {
+  if (buttonState == 0){
+    dropdownContainer.classList.add("visible");
+    buttonState = 1;
+  }else{
+    buttonState = 0;
+    dropdownContainer.classList.remove("visible");
+  }
+}
+//Closes hamburger menu
+function hamburgler() {
+  if (buttonState == 1){
+    buttonState = 0;
+    dropdownContainer.classList.remove("visible");
+  }
+}
+
+function scrolling() {
+  hamburgler();
+}
 
 //CHECKBOX
 function calcMode(){

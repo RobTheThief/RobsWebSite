@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" media="screen" href="css/particlestyle.css">
-
+  <link rel="icon" href="img/favicon.png">
 </head>
 
 <body>
@@ -14,35 +14,30 @@
     <a class = "welcomeMsg text-white" href="#myHeader">Welcome to my Webpage.<br> I'm <span style ="color:#00CED1;"><b>Rob Gannon</b></span>.<br>Click here to view my work.</a>
   </div>
 
-<nav id="myHeader" class="sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+<nav class="sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
 
     <div class="dropdown text-left border-4">
-      <span class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
-      <div class="dropdown-content bg-black">
+      <span id="menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
+      <div id="dropdownContainer" class="dropdown-container bg-black">
         <a style = "color:#00CED1;" href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
-        <a href="#about" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+        <a href="#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
         <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
         <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
       </div>
     </div>
 
     <a style = "color:#00CED1;" href="index.html" class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
-    <a href="#about" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+    <a href="#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
     <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
     <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
     <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
 
   </nav>
 
-<main class ="w-full inline-block bg-gray-200">
+<main id="about" class ="w-full inline-block bg-gray-200">
 
-
-  <div id= "about" class="py-2 px-10 text-left">
-    <p class="inline-block lg:w-2/3 sm:w-full text-left p-4 sm:text-2xl lg:text-base"><b>Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.<br></br></p>
-  </div>
-
-<h1 class = "aboutHeading"><u>About</u></h1>
-
+<h1 id="myHeader" class = "aboutHeading"><u>About</u></h1>
+<br></br>
 <div class = "flex-row sm:flex-col">
   <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
     <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
@@ -66,25 +61,45 @@
   </div>
 </div>
 
-<div class="sm:p-20 lg:p-10 text-left">
-  <p class="font-bold inline-block sm:w-full text-left pb-3 pt-0 p-4 sm:text-2xl lg:text-base">this is where we have info!!!!</p>
-</div>
 
-<div class="sm:p-20 lg:p-10 text-left">
-  <p class="font-bold inline-block w-full text-left pb-3 pt-0 p-4 sm:text-2xl lg:text-base"><br></br>.....more info!
-  </p><br>
-</div>
+<br></br>
+  <!-- About Me -->
+  <div class="w-full thewholething flex flex-col lg:flex-row sm:flex-col md:flex-row xl:flex-row justify-center items-center">
 
-<div class ="borderTrans bg-black"><span class = "transBorderHead text-white"><b>This is where</span><p class = "borderTransText text-white"><br>We put some interesting stuff the say.</p></div>
+    <div class="meContainer inline-block text-center">
+        <div class="aboutMe text-left flex flex-col sm:flex-row" align="center">
+          <div class ="borderTrans bg-black mb-4 text-center">
+            <span class = "transBorderHead text-4xl"><b>Hi!</b></span><span class = "borderTransText" style="color:black;"><br><b>Know any good lawyers?!</b></span><br></br><a href="contact.php" class = "borderTransText"><b><b><u>Sent me a message.</u></b></b></a>
+          </div>
+        <p id="blurb">Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.</p>
+      </div>
+    </div>
 
+<!-- SPIDER GRAPH h-1/4 -->
+    <div class="graph-bg text-left inline-block items-center flex-col">
+      <div class="graphcontainer">
+        <div class="statform out">
+        </div>
+        <div class="statform in">
+        </div>
+      </div>
+    </div>
 
-<br>
-  <div class="py-5 px-10 text-left ">
-    <a href="https://github.com/RobTheThief" class="inline-block lg:w-2/3 sm:w-full text-left py-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank">GitHub Projects Link</a><br>
-    <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" class="inline-block lg:w-2/3 sm:w-full text-left py-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank">Linkedin</a><br>
+    <div class="labelcontainer text-left inline-block items-center flex-col">
+    <ul>
+      <li class="label1"><span>JavaScript</span></li>
+      <li class="label2"><span>CSS</span></li>
+      <li class="label3"><span>HTML</span></li>
+      <li class="label4"><span>PHP</span></li>
+      <li class="label5"><span>TailwindCSS</span></li>
+      </ul>
+    </div>
+
   </div>
 
-  <br></br><br></br><br></br>
+<br></br><br></br>
+
+
 
 </main>
 
@@ -114,7 +129,7 @@
 
 <script type="text/javascript">
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrolling()};
 
 var attributes1 = document.getElementById("attributes1");
 var attributes2 = document.getElementById("attributes2");
@@ -129,9 +144,30 @@ var attribText2 = document.getElementById("attribText2");
 var attribText3 = document.getElementById("attribText3");
 var attribText4 = document.getElementById("attribText4");
 
+var buttonState = 0;
+
 var scrollTrigger = attributes1.offsetTop;
 
-function myFunction() {
+//Menu Button
+function menuBtn() {
+  if (buttonState == 0){
+    dropdownContainer.classList.add("visible");
+    buttonState = 1;
+  }else{
+    buttonState = 0;
+    dropdownContainer.classList.remove("visible");
+  }
+}
+//Closes hamburger menu
+function hamburgler() {
+  if (buttonState == 1){
+    buttonState = 0;
+    dropdownContainer.classList.remove("visible");
+  }
+}
+
+function scrolling() {
+  hamburgler();
   if (window.pageYOffset = scrollTrigger) {
     attributes1.classList.add("attribContainer1");
     attribSymbol1.classList.add("attribSymbol");
