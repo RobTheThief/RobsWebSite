@@ -15,10 +15,10 @@
 
 <body >
 
-  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 sm:py-6">
+  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 py-6">
 
       <div class="dropdown text-left border-4">
-      <span id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></span>
+      <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></a>
         <div id="dropdownContainer" class="dropdown-container bg-black">
           <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
           <a href="index.html#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
@@ -49,24 +49,24 @@
     <div class="contactContainer">
       <form id="contact" action = "<?= $_SERVER['PHP_SELF']; ?>" method = "post">
         <h3>Quick Contact</h3>
-        <fieldset>
+        <fieldset class="text-left">
           <input placeholder="Your name" type="text" name = "name" tabindex="1" value = "<?= $name ?>" autofocus>
           <span class = "error"><?= $name_error ?></span>
         </fieldset>
-        <fieldset>
+        <fieldset class="text-left">
           <input placeholder="Your Email Address" type="text" name = "email" value = "<?= $email ?>" tabindex="2" >
           <span class = "error"><?= $email_error ?></span>
         </fieldset>
-        <fieldset>
+        <fieldset class="text-left">
           <input placeholder="Your Phone Number" type="text" name = "phone" value = "<?= $phone ?>" tabindex="3" >
           <span class = "error"><?= $phone_error ?></span>
         </fieldset>
-        <fieldset>
+        <fieldset class="text-left">
           <input placeholder="Your Web Site starts with http://" type="text" name = "url" value = "<?= $url ?>" tabindex="4" >
           <span class = "error"><?= $url_error ?></span>
         </fieldset>
-        <fieldset>
-          <textarea placeholder="Type your Message Here...." type="text" name = "message" value = "<?= $message ?>" tabindex="5" ></textarea>
+        <fieldset class="text-left">
+          <textarea placeholder="Type your Message Here...." type="text" name = "message" tabindex="5" ><?=$message?></textarea>
           <span class = "error"><?= $message_error ?></span>
         </fieldset>
         <fieldset>
@@ -107,16 +107,21 @@
     <script type="text/javascript">
 
 
+
     window.onscroll = function() {scrolling()};
     var buttonState = 0;
+    var menuButton = document.getElementById("menuBtn");
+
     //Menu Button
     function menuBtn() {
       if (buttonState == 0){
         dropdownContainer.classList.add("visible");
+        menuButton.classList.add("menuClicked");
         buttonState = 1;
       }else{
         buttonState = 0;
         dropdownContainer.classList.remove("visible");
+        menuButton.classList.remove("menuClicked");
       }
     }
     //Closes hamburger menu
@@ -124,6 +129,7 @@
       if (buttonState == 1){
         buttonState = 0;
         dropdownContainer.classList.remove("visible");
+        menuButton.classList.remove("menuClicked");
       }
     }
 
