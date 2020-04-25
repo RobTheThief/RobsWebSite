@@ -13,10 +13,10 @@
 
 <body >
 
-  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
+  <nav class="header my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
 
       <div class="dropdown text-left border-4">
-      <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></a>
+      <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
         <div id="dropdownContainer" class="dropdown-container bg-black">
           <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
           <a href="index.html#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
@@ -38,13 +38,15 @@
 <main class ="w-full inline-block bg-gray-200">
 
   <div class="px-10 inline-block">
-    <a href="https://github.com/RobTheThief" class="w-full text-left lg:pt-5 sm:pt-0 p-4 sm:text-2xl lg:text-base underline text-blue-600" target="_blank"><b>GitHub Projects Link</a>
+    <a href="https://github.com/RobTheThief" class="w-full text-left pt-0 sm:pt-0 text-xl underline text-blue-600" target="_blank"><b><br><br>GitHub Projects Link</a>
   </div>
+
+<br></br>
+<div class="breakProj border-4 border-l-0 border-r-0 w-full"></div>
 <br></br>
 
-
 <!-- PROJECT CALCULATOR -->
-<div class = "projDiv flex lg:flex-row pl-6 text-center">
+<div class = "projDiv flex md:flex-col lg:flex-row pl-6 text-center">
   <div class = "calclDiv inline-block" style = "position:relative; left:10px;">
 
       <h3>   <!-- It's --></h3><br>
@@ -120,7 +122,7 @@
      </div> <!-- End Container-->
 
 <!-- vertical-align: text-top; -->
-     <div class = "p-4 pl-1 pt-0 inline-block align-text-top text-left"><p class = "lg:pl-10"><br><b>After learning the basics of CSS, HTML and JavaScript
+     <div class = "p-4 pl-1 pt-0 inline-block align-text-top text-left"><p class = "lg:pl-10"><span class="text-xl underline text-left"><br>Robulator!</span><br><br>After learning the basics of CSS, HTML and JavaScript
                                                                         I decided that my first project, as it is for
                                                                         many, should be a calculator. The only framework
                                                                         used was TailWindCSS.<br></br>
@@ -140,7 +142,35 @@
                                                                         <a href="https://github.com/RobTheThief/Calculator.git" class="sm:text-2xl lg:text-base underline text-blue-600" target="_blank">GitHub Repository</a><br></br>
                                                                       </p></div>
 </div>
+
 <br></br>
+<div class="breakProj border-4 border-l-0 border-r-0 w-full"></div>
+<br></br>
+
+<div class = "projDiv flex p-4 items-center text-center">
+  <img class="inline-block navbar1Pic" src="img/navbar1CodepenPic.png" alt="Nav Bar and Footer Codepen Pic" height="800" width="600">
+  <div class="p-4 pl-6 inline-block" style="max-width:500px">
+    <p class="text-left text-xl"><u>Nav Bar and Footer Codepen</u></p>
+    <p class="align-text-top text-left">
+      <br>This is my first codepen project.  I basically took the nav bar and footer from this website but translated the TailWindCSS into vanilla CSS. Doing this also led to some improvements and these were then added to this website.
+      <br>
+    </p>
+    <br>
+    <div class="text-left"><a href="https://github.com/RobTheThief/navbar1.git" class="sm:text-2xl lg:text-base underline text-blue-600" target="_blank">GitHub Repository</a></div>
+    <div class="text-left"><a href="https://codepen.io/robthethief/pen/dyYvJVK" class="sm:text-2xl lg:text-base underline text-blue-600" target="_blank">Codepen</a></div>
+  </div>
+</div>
+
+<br></br>
+<div class="breakProj border-4 border-l-0 border-r-0 w-full"></div>
+<br></br>
+
+<div class="inline-block w-1/2 dudeProj">
+  <h2 class="text-left lg:pl-10 xl:py-10">Next project....</h2>
+  <br></br>
+  <img class="inline-block dude" src="img/dude.gif" alt="relax dude" height="700" width="500">
+</div>
+<br></br><br></br>
 
 
 </main>
@@ -162,6 +192,11 @@
         <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
         <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
         <span class="tooltiptext">Twitter</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
+        <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Codepen</span>
     </div>
   </div>
 </footer>

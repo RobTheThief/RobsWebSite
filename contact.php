@@ -15,10 +15,10 @@
 
 <body >
 
-  <nav class="header sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 py-6">
+  <nav class="header my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 lg:p-4 pl-4 py-6">
 
       <div class="dropdown text-left border-4">
-      <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></a>
+      <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
         <div id="dropdownContainer" class="dropdown-container bg-black">
           <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
           <a href="index.html#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
@@ -98,6 +98,11 @@
         <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
         <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
         <span class="tooltiptext">Twitter</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
+        <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Codepen</span>
     </div>
   </div>
 </footer>

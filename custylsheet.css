@@ -7,6 +7,9 @@ html {
 main {
   top:50%;
   padding-top: 3%;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -17,6 +20,7 @@ a {
 p {
   font-family: 'Raleway', sans-serif;
 }
+
 
 /************SPIDER GRAPH**********/
 .categories,
@@ -38,17 +42,20 @@ li {
     background-image: url(img/bggraph.png)
 }
 .thewholething {
-    position: relative;
-    left: -60px;
-    margin: 0 auto;
+
+
 }
+
+.graphNlabels {
+  flex-direction: row;
+}
+
+
 .labelContainer {
-    top: 25px;
-    margin-right: 30px;
-    width: 200px;
+    width: 270px;
     min-width: 200px;
     position: relative;
-    left: 50px;
+    right: -60px;
 }
 li {
     font-size: 18pt;
@@ -58,33 +65,23 @@ li {
 }
 .label1 {
     color: red;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width:250px;
 }
 .label2 {
     color: #0ff;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width:250px;
 }
 .label3 {
     color: #ff0;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width: 215px;
 }
 .label4 {
     color: #c9c;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width: 108px;
 }
 .label5 {
     color: #c9c;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width: 175px;
 }
 
 li span {
@@ -95,19 +92,15 @@ li span {
 .space {
   opacity: 0;
 }
-.phpPercent {
-  opacity: 0;
-  animation-name: phpPercent;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out
-}
+
 .graph-bg {
     width: 300px;
     min-width: 300px;
     height: 300px;
+    background-image: url(img/bggraph.png);
     position: relative;
-    background-image: url(img/bggraph.png)
+    right: 80px;
+    top: 5px;
 }
 .graphContainer {
     top: 16.5%;
@@ -199,79 +192,61 @@ li.label5 {
     0%, 10%, 100% {
         background-color: #DD2941;
 
-        width: 250px;
     }
     15%,
     90% {
         background-color: black;
-        width: 130px;
     }
 }
 /* CSS  */
 @keyframes label2-anim {
     0%, 10%, 100%, 40% {
         background-color: black;
-        width: 130px;
     }
     20% {
         background-color: #0CBCCC;
-        width:250px;
     }
 }
 /* HTML  */
 @keyframes label3-anim {
     30%, 65% {
         background-color: black;
-        width: 130px;
+
     }
     40% {
         background-color: #C9C815;
-        width: 215px;
+
     }
 }
 /* PHP  */
 @keyframes label4-anim {
     50%, 90% {
         background-color: black;
-        width: 130px;
+
     }
     55% {
         background-color: #c9c;
-        width: 108px;
+
     }
 }
 /* TailWindCSS  */
 @keyframes label5-anim {
     0%,67%,100% {
         background-color: black;
-        width: 130px;
+
     }
 
     75% {
         background-color: #C9C815;
-        width: 175px;
+
     }
 }
 
-@keyframes phpPercent {
-    0%, 100%, 8% {/*JavaScript   */
-        opacity: 0;
-    }
-    20% {/* CSS  */
-        opacity: 0;
-    }
-    40% {/* HTML  */
-        opacity: 0;
-    }
-    60% {/* PHP  */
-        opacity: 1;
-    }
-    80% {/* TailWindCSS  */
-        opacity: 0;
-    }
-}
 /*^^^^^^^^^^^^SPIDER GRAPH^^^^^^^^^^^^*/
 
+.clicked-button-color {
+  color: #00CED1 !important;
+}
 
 .aboutHeading {
   font-family: 'Raleway', sans-serif;
@@ -280,17 +255,26 @@ li.label5 {
 }
 
 .aboutMe {
-
+  width: 300px;
+  position: relative;
+  right: 60px;
 }
 
 .meContainer {
+  flex-direction: row;
+}
+
+.blurb-container {
   position: relative;
-  left: -20px;
+  right: -35px;
+  width: 300px;
+  top: -10px;
 }
 
 #blurb {
-  text-align: center;
   max-width: 200px;
+  min-width: 200px;
+  text-align: left;
 }
 
 .borderTrans {
@@ -305,6 +289,7 @@ li.label5 {
   background: url("img/Thief.jpg") no-repeat;
   background-position: -170% 40%;
   transition: .8s ease;
+  right: 10px;
 }
 
 .borderTrans:hover {
@@ -354,32 +339,32 @@ p.attribText {
 }
 
 .attribContainer1 {
-  right: 0 ;
+  right: 60px ;
   position: relative;
-  animation-name: initImageSlide;
+  animation-name: initImageSlideLeft;
   animation-duration: 2s;
 }
 
 .attribContainer2 {
-  right: 0 ;
+  right: -60px ;
   position: relative;
-  animation-name: initImageSlide;
+  animation-name: initImageSlideRight;
   animation-duration: 2s;
 
 }
 
 .attribContainer3 {
-  right: 0 ;
+  right: 60px ;
   position: relative;
-  animation-name: initImageSlide;
+  animation-name: initImageSlideLeft;
   animation-duration: 2s;
 
 }
 
 .attribContainer4 {
-  right: 0 ;
+  right: -60px ;
   position: relative;
-  animation-name: initImageSlide;
+  animation-name: initImageSlideRight;
   animation-duration: 2s;
 
 }
@@ -391,7 +376,7 @@ p.attribText {
 }
 
 .attribSymbol:hover {
-  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
   transform: scaleX(-1);
   transition: 2s ease;
 }
@@ -403,9 +388,20 @@ p.attribText {
   100% {transform: scaleX(1);}
   }
 
-@keyframes initImageSlide {
+@keyframes initImageSlideLeft {
   0% {right: -100px;}
-  100% {right: 0px;}
+  100% {right: 60px;}
+  0% {transform: scaleX(0);}
+  25% {transform: scaleX(-1);}
+  75%  {transform: scaleX(0);}
+  100% {transform: scaleX(1);}
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes initImageSlideRight {
+  0% {right: -100px;}
+  100% {right: -60px;}
   0% {transform: scaleX(0);}
   25% {transform: scaleX(-1);}
   75%  {transform: scaleX(0);}
@@ -476,17 +472,37 @@ footer {
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
+.dudeProj {
+  overflow: hidden;
+}
+
+.breakProj {
+  border-color: #00CED1;
+  height: 100px;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%2300ced1' fill-opacity='1' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.dude {
+  border: 0.3rem outset black;
+  border-radius: 5px;
+}
+
+.navbar1Pic {
+  border: 0.3rem outset black;
+  border-radius: 5px;
+  min-width: 330px;
+}
+
 .copyright {
   width: 200%;
 }
 
 /*STICKY NAV BAR*/
-.sticky {
-  position: fixed;
+.my-sticky {
+  position: sticky;
   top: 0;
 }
-
-
 
 .buttonCustom {
   color: white;
@@ -617,7 +633,6 @@ width: 10%;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 135px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   height: 0px;
   transition: height 0.3s ease-out;
@@ -639,27 +654,12 @@ width: 10%;
 
 }
 
-@media only screen and (max-width:1024px) {
-  .thewholething {
-    position: relative;
-    left: 0px;
-    width: 50%;
-  }
+ @media only screen and (max-width:1100px) {
 
-  .borderTrans {
-     position: relative;
-     right: 50px;
-   }
+}
 
-   #blurb {
-     position: relative;
-     left: 50px;
-   }
+@media only screen and (max-width:1023px) {
 
-   .graph-bg {
-     position: relative;
-     right: 25px;
-   }
 }
 
 @media only screen and (max-width:840px) {
@@ -671,17 +671,6 @@ width: 10%;
 
   .projDiv {
     flex-direction: column;
-
-  }
-  .thewholething {
-    position: relative;
-    left: 0px;
-    width: 50%;
-  }
-
-  .meContainer {
-    position: relative;
-    left: 0px;
   }
 }
 
@@ -705,39 +694,115 @@ width: 10%;
   .copyright {
     width: 150%;
   }
+  .attribContainer1 {
+    right: 0px ;
+    position: relative;
+    animation-name: initImageSlideLeft;
+    animation-duration: 2s;
+  }
 
-  .borderTrans {
-     position: relative;
-     right: 50px;
-   }
+  .attribContainer2 {
+    right: 0px ;
+    position: relative;
+    animation-name: initImageSlideRight;
+    animation-duration: 2s;
 
-   #blurb {
-     position: relative;
-     left: 50px;
-   }
+  }
 
-   .graph-bg {
-     position: relative;
-     right: 25px;
-   }
+  .attribContainer3 {
+    right: 0px ;
+    position: relative;
+    animation-name: initImageSlideLeft;
+    animation-duration: 2s;
 
-}
+  }
 
-@media only screen and (max-width:640px) {
+  .attribContainer4 {
+    right: 0px ;
+    position: relative;
+    animation-name: initImageSlideRight;
+    animation-duration: 2s;
 
-  .borderTrans {
+  }
+
+  @keyframes initImageSlideLeft {
+    0% {right: -100px;}
+    100% {right: 0px;}
+    0% {transform: scaleX(0);}
+    25% {transform: scaleX(-1);}
+    75%  {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes initImageSlideRight {
+    0% {right: -100px;}
+    100% {right: 0px;}
+    0% {transform: scaleX(0);}
+    25% {transform: scaleX(-1);}
+    75%  {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .meContainer {
     position: relative;
     right: 0px;
   }
 
-  #blurb {
+  .aboutMe {
     position: relative;
-    left: 0px;
+    right: 0px;
+  }
+
+  .blurb-container {
+    position: relative;
+    right: 15px;
+    top: -10px;
+  }
+
+  .graphNlabels {
+    position: relative;
+    right: 0px;
+  }
+
+  .graph-bg {
+    position: relative;
+    right: 20px;
+  }
+
+  .labelContainer {
+    position: relative;
+    right: -10px;
+  }
+}
+
+@media only screen and (max-width:604px) {
+
+  .meContainer {
+    flex-direction: column;
+  }
+
+  .graphNlabels {
+    flex-direction: column;
+  }
+
+  #blurb {
+    text-align: center;
   }
 
   .graph-bg {
     position: relative;
     right: 0px;
+    top: 0px;
+  }
+
+  .blurb-container {
+    position: relative;
+    right: 5px;
+    top: 0px;
   }
 }
 
@@ -757,55 +822,25 @@ width: 10%;
     width: 75%;
   }
 
-  .meContainer {
-    position: relative;
-    left: 0px;
-  }
-
-  .thewholething {
-      position: relative;
-      left: 0px;
-  }
-
   .dropdown {
     display: inline-block;
   }
 
-  .borderTrans {
-    position: relative;
-    right: 0px;
+  .dropdown-container{
+    width: 420px;
   }
 
-  #blurb {
-    position: relative;
-    left: 0px;
+  .graphNlabels {
+    left: 0;
   }
 
   .graph-bg {
     position: relative;
     right: 0px;
+    top:05px;
   }
-}
 
-@media only screen and (min-width:360px) {
-  .dropdown-container{
-    width: 360px;
-  }
+  .my-sticky {
+    position: fixed;
+    top: 0;
 }
-
-@media only screen and (min-width:375px) {
-  .dropdown-container{
-    width: 375px;
-  }
-}
-
-@media only screen and (min-width:414px) {
-  .dropdown-container{
-    width: 414px;
-  }
-}
-
-@media only screen and (min-width:415px) {
-  .dropdown-container{
-    width: 135px;
-  }

@@ -14,94 +14,108 @@
     <a class = "welcomeMsg text-white" href="#myHeader">Welcome to my Webpage.<br> I'm <span style ="color:#00CED1;"><b>Rob Gannon</b></span>.<br>Click here to view my work.</a>
   </div>
 
-<nav class="sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
+<nav class="my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
 
     <div class="dropdown text-left border-4">
-      <a id="menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu<div class="BtnCover"></div></a>
+      <a id="menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
       <div id="dropdownContainer" class="dropdown-container bg-black">
-        <a style = "color:#00CED1;" href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
-        <a href="#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
+        <a id="menuBtnHome" href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
+        <a id="menuBtnAbout" href="#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
         <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
         <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
       </div>
     </div>
 
-    <a style = "color:#00CED1;" href="index.html" class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
-    <a href="#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
+    <a id="home" href="index.html" class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
+    <a id="about" href="#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
     <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
     <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
     <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
 
   </nav>
 
-<main id="about" class ="w-full inline-block bg-gray-200">
+<main class ="w-full inline-block bg-gray-200">
 
-<h1 id="myHeader" class = "aboutHeading"><u>About</u></h1>
-<br></br>
-<div class = "flex-row sm:flex-col">
-  <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
-    <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
-    <p id = "attribText1" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Responsive</span><br><span class = "attribDescription">Tailored to work on any screen or device</span></p>
-  </div>
+  <h1 id="myHeader" class = "aboutHeading lg:pb-20"><u><br><br>About</u></h1>
+  <div id="aboutSection">
+    <div>
 
-  <div id= "attributes2" class = "text-left inline-block items-center flex-col py-8 preScroll">
-    <img id = "attribSymbol2" src = "img/fastloading.svg" class = "attribSymbol text-center"></img>
-    <p id = "attribText2" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Fast Loading</span><br><span class = "attribDescription">Optimized for quicker load times</span></p>
-  </div>
+      <div>
+        <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
+          <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
+          <p id = "attribText1" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Responsive</span><br><span class = "attribDescription">Tailored to work on any screen or device</span></p>
+        </div>
 
-  <div id= "attributes3" class = "text-left inline-block items-center flex-col py-8 preScroll">
-    <img id = "attribSymbol3" src = "img/easeofuse.svg" class = "attribSymbol text-center"></img>
-    <p id = "attribText3" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Ease of Use</span><br><span class = "attribDescription">Intuitively designed for easy navigation</span></p>
-  </div>
+        <div id= "attributes2" class = "text-left inline-block items-center flex-col py-8 preScroll">
+          <img id = "attribSymbol2" src = "img/fastloading.svg" class = "attribSymbol text-center"></img>
+          <p id = "attribText2" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Fast Loading</span><br><span class = "attribDescription">Optimized for quicker load times</span></p>
+        </div>
+    </div>
 
-  <div id= "attributes4" class = "text-left inline-block items-center flex-col py-8 preScroll">
-    <img id = "attribSymbol4" src = "img/customdesign.svg" class = "attribSymbol text-center"></img>
-    <p id = "attribText4" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Custom Design</span><br><span class = "attribDescription">Can be made to any specification</span></p>
+    <div>
+        <div id= "attributes3" class = "text-left inline-block items-center flex-col py-8 preScroll">
+          <img id = "attribSymbol3" src = "img/easeofuse.svg" class = "attribSymbol text-center"></img>
+          <p id = "attribText3" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Ease of Use</span><br><span class = "attribDescription">Intuitively designed for easy navigation</span></p>
+        </div>
 
-  </div>
-</div>
+        <div id= "attributes4" class = "text-left inline-block items-center flex-col py-8 preScroll">
+          <img id = "attribSymbol4" src = "img/customdesign.svg" class = "attribSymbol text-center"></img>
+          <p id = "attribText4" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Custom Design</span><br><span class = "attribDescription">Can be made to any specification</span></p>
+        </div>
+    </div>
+
+    </div>
 
 
-<br></br>
-  <!-- About Me -->
-  <div class="w-full thewholething flex flex-col lg:flex-row sm:flex-col md:flex-col xl:flex-row justify-center items-center">
+    <br></br>
+    <!-- About Me -->
+    <div class="thewholething w-full">
 
-    <div class="meContainer inline-block text-center">
-        <div class="aboutMe text-left flex flex-col sm:flex-row md:flex-row lg:flex-row" align="center">
-          <div class ="borderTrans bg-black mb-4 text-center">
-            <span class = "transBorderHead text-4xl"><b>Hi!</b></span><span class = "borderTransText" style="color:black;"><br><b>Know any good lawyers?!</b></span><br></br><a href="contact.php" class = "borderTransText"><b><b><u>Sent me a message.</u></b></b></a>
+        <div class="meContainer flex items-center justify-center">
+
+            <div class="aboutMe flex items-center justify-center">
+              <div class ="borderTrans bg-black mb-4 text-center">
+                <span class = "transBorderHead unselectable text-4xl"><b>Hi!</b></span><span class = "borderTransText unselectable" style="color:black;"><br><b>Know any good lawyers?!</b></span><br></br><a href="contact.php" class = "borderTransText unselectable"><b><b><u>Sent me a message.</u></b></b></a>
+              </div>
+            </div>
+
+            <div class="blurb-container flex items-center justify-center">
+              <p id="blurb">Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="thewholething w-full">
+    <!-- SPIDER GRAPH AND LABELS -->
+      <div class ="graphNlabels flex items-center justify-center ">
+
+        <div class="graph-bg">
+          <div class="graphContainer">
+            <div class="statform out">
+            </div>
+            <div class="statform in">
+            </div>
           </div>
-        <p id="blurb">Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.</p>
+        </div>
+
+        <div class="labelContainer">
+        <ul>
+          <li class="label1"><span>JavaScript<span class="space">..........................................</span>70%</span></li>
+          <li class="label2"><span>CSS<span class="space">........................................................</span>70%</span></li>
+          <li class="label3"><span>HTML<span class="space">........................................</span>60%</span></li>
+          <li class="label4"><span>PHP<span class="space">...........</span>30%</span></li>
+          <li class="label5"><span>TailwindCSS<span class="space">.............</span>50%</span></li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
-<!-- SPIDER GRAPH AND LABELS-->
-<div class ="flex flex-col sm:flex-row md:flex-row lg:flex-row">
-    <div class="graph-bg text-left inline-block items-center">
-      <div class="graphContainer">
-        <div class="statform out">
-        </div>
-        <div class="statform in">
-        </div>
-      </div>
-    </div>
-    <div class="labelContainer text-left inline-block items-center">
-    <ul>
-      <li class="label1"><span>JavaScript<span class="space">..........................................</span>70%</span></li>
-      <li class="label2"><span>CSS<span class="space">........................................................</span>70%</span></li>
-      <li class="label3"><span>HTML<span class="space">........................................</span>60%</span></li>
-      <li class="label4"><span>PHP<span class="space">...........</span><span class ="phpPercent">30%</span></span></li>
-      <li class="label5"><span>TailwindCSS<span class="space">.............</span>50%</span></li>
-      </ul>
-    </div>
-</div>
-
-</div>
-
-<br></br><br></br>
+    <br></br><br></br>
 
 
-
+  </div>
 </main>
 
 <footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
@@ -121,6 +135,11 @@
         <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
         <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
         <span class="tooltiptext">Twitter</span>
+    </div>
+    <div class="w-full align-right overlayContainer tooltip">
+        <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
+        <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
+        <span class="tooltiptext">Codepen</span>
     </div>
   </div>
 </footer>
@@ -173,6 +192,7 @@ function hamburgler() {
 
 function scrolling() {
   hamburgler();
+  scrollingLinkColor();
   if (window.pageYOffset = scrollTrigger) {
     attributes1.classList.add("attribContainer1");
     attribSymbol1.classList.add("attribSymbol");
@@ -197,6 +217,56 @@ function scrolling() {
     setTimeout(function(){ attribText4.classList.add("attribText");}, 5000);
   }
 }
+
+/*Below allows the link colors to change according to the section. Currently there is only 2 to scroll between so
+this could be done with a couple line of code but this was copied from a codepen I made already and allows for
+other links to be added easliy in the future aswell as content to that section without much work.
+ https://codepen.io/robthethief/pen/dyYvJVK */
+
+var menuBtnHomeVar = document.getElementById("menuBtnHome");
+var homeVar = document.getElementById("home");
+var menuBtnAboutVar = document.getElementById("menuBtnAbout");
+var aboutVar = document.getElementById("about");
+//Starting position for lastLink and lastLinkMenu as we arrive at "Home" and to avoid 'undefined' error
+var lastLink = document.getElementById("home");
+var lastLinkMenu = document.getElementById("menuBtnHome");
+
+function home() {
+      menuBtnHomeVar.classList.add("clicked-button-color");
+      homeVar.classList.add("clicked-button-color");
+      if (lastLink !== document.getElementById("home")){
+        lastLink.classList.remove("clicked-button-color");
+        lastLinkMenu.classList.remove("clicked-button-color");
+      }
+      lastLink = document.getElementById("home");
+      lastLinkMenu = document.getElementById("menuBtnHome");
+    }
+
+function about() {
+      menuBtnAboutVar.classList.add("clicked-button-color");
+      aboutVar.classList.add("clicked-button-color");
+      if (lastLink !== document.getElementById("about")){
+        lastLink.classList.remove("clicked-button-color");
+        lastLinkMenu.classList.remove("clicked-button-color");
+      }
+      lastLink = document.getElementById("about");
+      lastLinkMenu = document.getElementById("menuBtnAbout");
+    }
+
+//Detects what section the page is scrolled to and changes the color of the menu and nav bar links
+    function scrollingLinkColor() {
+//total height of each element specified
+      var ap = aboutSection.offsetHeight;
+
+//Gets scroll height from top of page to each element specified and total height of element using .top and .height
+      var ab = myHeader.getBoundingClientRect();
+
+      if (ab.top <= ab.height && ab.top >= -ap-ab.height){
+        about();
+      }else {home();}
+    }
+//run once to accomodate to give color on arrival or refresh
+scrollingLinkColor();
 
 </script>
 
