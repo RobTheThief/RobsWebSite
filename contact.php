@@ -2,13 +2,16 @@
 <?php include('form_process.php'); ?>
 
 <html class = "text-center bg-white">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head class="inline-block">
-
-  <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rob Gannon's contact section on portfolio web page">
+  <title>Rob Gannon</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="form.css">
   <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,17 +23,17 @@
       <div class="dropdown text-left border-4">
       <a id = "menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
         <div id="dropdownContainer" class="dropdown-container bg-black">
-          <a href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
-          <a href="index.html#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
-          <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
-          <a style = "color:#00CED1;" href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
+          <a href="index.html"class="menuLabel font-semibold overlay_container">Home<div class="overlay"></div></a>
+          <a href="index.html#myHeader" class="menuLabel font-semibold overlay_container">About<div class="overlay"></div></a>
+          <a href="projects.html" class="menuLabel font-semibold overlay_container">Projects<div class="overlay"></div></a>
+          <a style = "color:#00CED1;" href="contact.php" class="menuLabel font-semibold overlay_container">Contact<div class="overlay"></div></a>
         </div>
       </div>
 
-      <a href="index.html"class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
-      <a href="index.html#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
-      <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
-      <a style = "color:#00CED1;" href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
+      <a href="index.html"class="buttonCustom font-semibold px-4 overlay_container">Home<div class="overlay"></div></a>
+      <a href="index.html#myHeader" class="buttonCustom font-semibold  px-4 overlay_container">About<div class="overlay"></div></a>
+      <a href="projects.html" class="buttonCustom font-semibold px-4 overlay_container">Projects<div class="overlay"></div></a>
+      <a style = "color:#00CED1;" href="contact.php" class="buttonCustom font-semibold px-4 overlay_container">Contact<div class="overlay"></div></a>
       <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
 
     </nav>
@@ -84,25 +87,25 @@
 <footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
   <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
   <div class = "items-center flex text-right w-full" style = "width: 20%;">
-    <div class="w-full align-right overlayContainer tooltip">
+    <div class="w-full align-right overlay_container tooltip">
         <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
         <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
-        <span class="tooltiptext">Linkedin</span>
+        <span class="tooltip_text">Linkedin</span>
     </div>
-    <div class="w-full align-right overlayContainer tooltip">
+    <div class="w-full align-right overlay_container tooltip">
         <img src="img/github.png" alt="github" height="1" width="23" align = "right">
         <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
-        <span class="tooltiptext">GitHub</span>
+        <span class="tooltip_text">GitHub</span>
     </div>
-    <div class="w-full align-right overlayContainer tooltip">
+    <div class="w-full align-right overlay_container tooltip">
         <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
         <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
-        <span class="tooltiptext">Twitter</span>
+        <span class="tooltip_text">Twitter</span>
     </div>
-    <div class="w-full align-right overlayContainer tooltip">
+    <div class="w-full align-right overlay_container tooltip">
         <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
         <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
-        <span class="tooltiptext">Codepen</span>
+        <span class="tooltip_text">Codepen</span>
     </div>
   </div>
 </footer>
@@ -117,24 +120,29 @@
     var buttonState = 0;
     var menuButton = document.getElementById("menuBtn");
 
-    //Menu Button
+    function menuDown () {
+      dropdownContainer.classList.add("visible");
+      menuButton.classList.add("menuClicked");
+    }
+    function menuUp () {
+      dropdownContainer.classList.remove("visible");
+      menuButton.classList.remove("menuClicked");
+    }
+
     function menuBtn() {
       if (buttonState == 0){
-        dropdownContainer.classList.add("visible");
-        menuButton.classList.add("menuClicked");
+        menuDown ();
         buttonState = 1;
       }else{
         buttonState = 0;
-        dropdownContainer.classList.remove("visible");
-        menuButton.classList.remove("menuClicked");
+        menuUp ();
       }
     }
     //Closes hamburger menu
     function hamburgler() {
       if (buttonState == 1){
         buttonState = 0;
-        dropdownContainer.classList.remove("visible");
-        menuButton.classList.remove("menuClicked");
+        menuUp ();
       }
     }
 

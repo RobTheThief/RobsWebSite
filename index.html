@@ -1,278 +1,280 @@
 
 <html class = "text-center bg-white">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head class="inline-block">
-  <link rel="stylesheet" href="custylsheet.css"> <!--Custom css outside framework. Has priority-->
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" media="screen" href="css/particlestyle.css">
-  <link rel="icon" href="img/favicon.png">
-</head>
 
-<body>
+  <head class="inline-block">
+    <meta name="description" content="Rob Gannon's portfolio web page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Gannon</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/custylsheet.css"> <!--Custom css outside framework. Has priority-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" media="screen" href="css/particlestyle.css">
+    <link rel="icon" href="img/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
 
-  <div class="text-white" id="particles-js">
-    <a class = "welcomeMsg text-white" href="#myHeader">Welcome to my Webpage.<br> I'm <span style ="color:#00CED1;"><b>Rob Gannon</b></span>.<br>Click here to view my work.</a>
-  </div>
+  <body>
 
-<nav class="my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
-
-    <div class="dropdown text-left border-4">
-      <a id="menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
-      <div id="dropdownContainer" class="dropdown-container bg-black">
-        <a id="menuBtnHome" href="index.html"class="menuLabel font-semibold overlayContainer">Home<div class="overlay"></div></a>
-        <a id="menuBtnAbout" href="#myHeader" class="menuLabel font-semibold overlayContainer">About<div class="overlay"></div></a>
-        <a href="projects.html" class="menuLabel font-semibold overlayContainer">Projects<div class="overlay"></div></a>
-        <a href="contact.php" class="menuLabel font-semibold overlayContainer">Contact<div class="overlay"></div></a>
-      </div>
+    <div class="text-white" id="particles-js">
+      <a class = "welcomeMsg text-white" href="#myHeader">Welcome to my Webpage.<br> I'm <span style ="color:#00CED1;"><b>Rob Gannon</b></span>.<br>Click here to view my work.</a>
     </div>
 
-    <a id="home" href="index.html" class="buttonCustom font-semibold px-4 overlayContainer">Home<div class="overlay"></div></a>
-    <a id="about" href="#myHeader" class="buttonCustom font-semibold  px-4 overlayContainer">About<div class="overlay"></div></a>
-    <a href="projects.html" class="buttonCustom font-semibold px-4 overlayContainer">Projects<div class="overlay"></div></a>
-    <a href="contact.php" class="buttonCustom font-semibold px-4 overlayContainer">Contact<div class="overlay"></div></a>
-    <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
+    <nav class="my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
 
-  </nav>
-
-<main class ="w-full inline-block bg-gray-200">
-
-  <h1 id="myHeader" class = "aboutHeading lg:pb-20"><u><br><br>About</u></h1>
-  <div id="aboutSection">
-    <div>
-
-      <div>
-        <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
-          <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
-          <p id = "attribText1" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Responsive</span><br><span class = "attribDescription">Tailored to work on any screen or device</span></p>
-        </div>
-
-        <div id= "attributes2" class = "text-left inline-block items-center flex-col py-8 preScroll">
-          <img id = "attribSymbol2" src = "img/fastloading.svg" class = "attribSymbol text-center"></img>
-          <p id = "attribText2" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Fast Loading</span><br><span class = "attribDescription">Optimized for quicker load times</span></p>
-        </div>
-    </div>
-
-    <div>
-        <div id= "attributes3" class = "text-left inline-block items-center flex-col py-8 preScroll">
-          <img id = "attribSymbol3" src = "img/easeofuse.svg" class = "attribSymbol text-center"></img>
-          <p id = "attribText3" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Ease of Use</span><br><span class = "attribDescription">Intuitively designed for easy navigation</span></p>
-        </div>
-
-        <div id= "attributes4" class = "text-left inline-block items-center flex-col py-8 preScroll">
-          <img id = "attribSymbol4" src = "img/customdesign.svg" class = "attribSymbol text-center"></img>
-          <p id = "attribText4" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Custom Design</span><br><span class = "attribDescription">Can be made to any specification</span></p>
-        </div>
-    </div>
-
-    </div>
-
-
-    <br></br>
-    <!-- About Me -->
-    <div class="thewholething w-full">
-
-        <div class="meContainer flex items-center justify-center">
-
-            <div class="aboutMe flex items-center justify-center">
-              <div class ="borderTrans bg-black mb-4 text-center">
-                <span class = "transBorderHead unselectable text-4xl"><b>Hi!</b></span><span class = "borderTransText unselectable" style="color:black;"><br><b>Know any good lawyers?!</b></span><br></br><a href="contact.php" class = "borderTransText unselectable"><b><b><u>Sent me a message.</u></b></b></a>
-              </div>
-            </div>
-
-            <div class="blurb-container flex items-center justify-center">
-              <p id="blurb">Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="thewholething w-full">
-    <!-- SPIDER GRAPH AND LABELS -->
-      <div class ="graphNlabels flex items-center justify-center ">
-
-        <div class="graph-bg">
-          <div class="graphContainer">
-            <div class="statform out">
-            </div>
-            <div class="statform in">
-            </div>
+        <div class="dropdown text-left border-4">
+          <a id="menuBtn" onclick="menuBtn()" class = "menuButton text-left font-semibold px-4 unselectable" unselectable="on">Menu</a>
+          <div id="dropdownContainer" class="dropdown-container bg-black">
+            <a id="menuBtnHome" href="index.html"class="menuLabel font-semibold overlay_container">Home<div class="overlay"></div></a>
+            <a id="menuBtnAbout" href="#myHeader" class="menuLabel font-semibold overlay_container">About<div class="overlay"></div></a>
+            <a href="projects.html" class="menuLabel font-semibold overlay_container">Projects<div class="overlay"></div></a>
+            <a href="contact.php" class="menuLabel font-semibold overlay_container">Contact<div class="overlay"></div></a>
           </div>
         </div>
 
-        <div class="labelContainer">
-        <ul>
-          <li class="label1"><span>JavaScript<span class="space">..........................................</span>70%</span></li>
-          <li class="label2"><span>CSS<span class="space">........................................................</span>70%</span></li>
-          <li class="label3"><span>HTML<span class="space">........................................</span>60%</span></li>
-          <li class="label4"><span>PHP<span class="space">...........</span>30%</span></li>
-          <li class="label5"><span>TailwindCSS<span class="space">.............</span>50%</span></li>
-          </ul>
+        <a id="home" href="index.html" class="buttonCustom font-semibold px-4 overlay_container">Home<div class="overlay"></div></a>
+        <a id="about" href="#myHeader" class="buttonCustom font-semibold  px-4 overlay_container">About<div class="overlay"></div></a>
+        <a href="projects.html" class="buttonCustom font-semibold px-4 overlay_container">Projects<div class="overlay"></div></a>
+        <a href="contact.php" class="buttonCustom font-semibold px-4 overlay_container">Contact<div class="overlay"></div></a>
+        <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
+
+      </nav>
+
+    <main class ="w-full inline-block bg-gray-200">
+
+      <h1 id="myHeader" class = "aboutHeading lg:pb-20"><u><br><br>About</u></h1>
+      <div id="aboutSection">
+        <div>
+
+          <div>
+            <div id= "attributes1" class = "text-left inline-block items-center flex-col py-8 preScroll">
+              <img id = "attribSymbol1" src = "img/responsive.svg" class = "attribSymbol text-center"></img>
+              <p id = "attribText1" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Responsive</span><br><span class = "attribDescription">Tailored to work on any screen or device</span></p>
+            </div>
+
+            <div id= "attributes2" class = "text-left inline-block items-center flex-col py-8 preScroll">
+              <img id = "attribSymbol2" src = "img/fastloading.svg" class = "attribSymbol text-center"></img>
+              <p id = "attribText2" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Fast Loading</span><br><span class = "attribDescription">Optimized for quicker load times</span></p>
+            </div>
         </div>
 
+        <div>
+            <div id= "attributes3" class = "text-left inline-block items-center flex-col py-8 preScroll">
+              <img id = "attribSymbol3" src = "img/easeofuse.svg" class = "attribSymbol text-center"></img>
+              <p id = "attribText3" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Ease of Use</span><br><span class = "attribDescription">Intuitively designed for easy navigation</span></p>
+            </div>
+
+            <div id= "attributes4" class = "text-left inline-block items-center flex-col py-8 preScroll">
+              <img id = "attribSymbol4" src = "img/customdesign.svg" class = "attribSymbol text-center"></img>
+              <p id = "attribText4" class = "text-center pt-4 preScrollText"><span class = "attribTitle">Custom Design</span><br><span class = "attribDescription">Can be made to any specification</span></p>
+            </div>
+        </div>
+
+        </div>
+
+
+        <br></br>
+        <!-- About Me -->
+        <div class="thewholething w-full">
+
+            <div class="meContainer flex items-center justify-center">
+
+                <div class="aboutMe flex items-center justify-center">
+                  <div class ="borderTrans bg-black mb-4 text-center">
+                    <span class = "transBorderHead unselectable text-xl"><b>Pssst!<br>Over here</b></span><span class = "borderTransText unselectable"><br><b>Know any good lawyers?!</b></span><br></br><a href="contact.php" class = "borderTransText unselectable"><b><b><u>Sent me a message.</u></b></b></a>
+                  </div>
+                </div>
+
+                <div class="blurb-container flex items-center justify-center">
+                  <p id="blurb">Hi! My name is Rob Gannon. I am a full-stack web developer and smartphone technician living in Cork City Ireland with a passion for back-end development.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="thewholething w-full">
+        <!-- SPIDER GRAPH AND LABELS -->
+          <div class ="graphNlabels flex items-center justify-center ">
+
+            <div class="graph-bg">
+              <div class="graphContainer">
+                <div class="statform out">
+                </div>
+                <div class="statform in">
+                </div>
+              </div>
+            </div>
+
+            <div class="labelContainer">
+            <ul>
+              <li class="label1"><div class = "lang inline-block w-1/2"><span>JavaScript</span></div><div class = "land_score inline-block w-1/2"><span>70%</span></div></li>
+              <li class="label2"><div class = "lang inline-block w-1/2"><span>CSS</span></div><div class = "land_score inline-block w-1/2"><span>70%</span></div></li>
+              <li class="label3"><div class = "lang inline-block w-1/2"><span>HTML</span></div><div class = "land_score inline-block w-1/2"><span>60%</span></div></li>
+              <li class="label4"><div class = "lang inline-block w-1/2"><span>PHP</span></div><div class = "land_score inline-block w-1/2"><span>30%</span></div></li>
+              <li class="label5"><div class = "lang inline-block w-1/2"><span>TailWindCSS</span></div><div class = "land_score inline-block w-1/2"><span>50%</span></div></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <br></br>
+        <br></br>
+
       </div>
-    </div>
+    </main>
 
-    <br></br><br></br>
+    <footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
+      <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
+      <div class = "items-center flex text-right w-full" style = "width: 20%;">
+        <div class="w-full align-right overlay_container tooltip">
+            <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
+            <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+            <span class="tooltip_text">Linkedin</span>
+        </div>
+        <div class="w-full align-right overlay_container tooltip">
+            <img src="img/github.png" alt="github" height="1" width="23" align = "right">
+            <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
+            <span class="tooltip_text">GitHub</span>
+        </div>
+        <div class="w-full align-right overlay_container tooltip">
+            <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
+            <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
+            <span class="tooltip_text">Twitter</span>
+        </div>
+        <div class="w-full align-right overlay_container tooltip">
+            <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
+            <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
+            <span class="tooltip_text">Codepen</span>
+        </div>
+      </div>
+    </footer>
 
-
-  </div>
-</main>
-
-<footer class = "py-4 pr-2 border-4 border-b-0 border-l-0 border-r-0 items-center flex text-left w-full">
-  <p class = "text-white text-left px-4 copyright">&copy; 2020 Rob Gannon.</p>
-  <div class = "items-center flex text-right w-full" style = "width: 20%;">
-    <div class="w-full align-right overlayContainer tooltip">
-        <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
-        <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
-        <span class="tooltiptext">Linkedin</span>
-    </div>
-    <div class="w-full align-right overlayContainer tooltip">
-        <img src="img/github.png" alt="github" height="1" width="23" align = "right">
-        <a href="https://github.com/RobTheThief" target="_blank"><div class="overlay"></div></a>
-        <span class="tooltiptext">GitHub</span>
-    </div>
-    <div class="w-full align-right overlayContainer tooltip">
-        <img src="img/twitter.png" alt="Twitter" height="23" width="23" align = "right">
-        <a href="https://twitter.com/thief_rob" target="_blank" class = ""><div class="overlay"></div></a>
-        <span class="tooltiptext">Twitter</span>
-    </div>
-    <div class="w-full align-right overlayContainer tooltip">
-        <img src="img/codepen.png" alt="Codepen" height="23" width="23" align = "right">
-        <a href="https://codepen.io/robthethief" target="_blank" class = ""><div class="overlay"></div></a>
-        <span class="tooltiptext">Codepen</span>
-    </div>
-  </div>
-</footer>
-
-<!-- scripts -->
+    <!-- scripts -->
 
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-window.onscroll = function() {scrolling()};
+    var menuButton = document.getElementById("menuBtn");
+    var buttonState = 0;
 
-var attributes1 = document.getElementById("attributes1");
-var attributes2 = document.getElementById("attributes2");
-var attributes3 = document.getElementById("attributes3");
-var attributes4 = document.getElementById("attributes4");
-var attribSymbol1 = document.getElementById("attribSymbol1");
-var attribSymbol2 = document.getElementById("attribSymbol2");
-var attribSymbol3 = document.getElementById("attribSymbol3");
-var attribSymbol4 = document.getElementById("attribSymbol4");
-var attribText1 = document.getElementById("attribText1");
-var attribText2 = document.getElementById("attribText2");
-var attribText3 = document.getElementById("attribText3");
-var attribText4 = document.getElementById("attribText4");
-
-var menuButton = document.getElementById("menuBtn");
-var buttonState = 0;
-
-var scrollTrigger = attributes1.offsetTop;
-
-//Menu Button
-function menuBtn() {
-  if (buttonState == 0){
-    dropdownContainer.classList.add("visible");
-    menuButton.classList.add("menuClicked");
-    buttonState = 1;
-  }else{
-    buttonState = 0;
-    dropdownContainer.classList.remove("visible");
-    menuButton.classList.remove("menuClicked");
-  }
-}
-//Closes hamburger menu
-function hamburgler() {
-  if (buttonState == 1){
-    buttonState = 0;
-    dropdownContainer.classList.remove("visible");
-    menuButton.classList.remove("menuClicked");
-  }
-}
-
-function scrolling() {
-  hamburgler();
-  scrollingLinkColor();
-  if (window.pageYOffset = scrollTrigger) {
-    attributes1.classList.add("attribContainer1");
-    attribSymbol1.classList.add("attribSymbol");
-    attributes1.classList.remove("preScroll");
-    setTimeout(function(){ attribText1.classList.add("attribText"); }, 2000);
-
-    setTimeout(function(){
-    attributes2.classList.add("attribContainer2");
-    attributes2.classList.remove("preScroll");
-    attribSymbol2.classList.add("attribSymbol"); }, 1000);
-    setTimeout(function(){ attribText2.classList.add("attribText");}, 3000);
+    var scrollTrigger = attributes1.offsetTop;
 
 
-    setTimeout(function(){ attributes3.classList.add("attribContainer3");
-    attributes3.classList.remove("preScroll");
-    attribSymbol3.classList.add("attribSymbol");}, 2000);
-    setTimeout(function(){ attribText3.classList.add("attribText");}, 4000);
+    window.onscroll = function() {scrolling()};
 
-    setTimeout(function(){ attributes4.classList.add("attribContainer4");
-    attributes4.classList.remove("preScroll");
-    attribSymbol4.classList.add("attribSymbol");}, 3000);
-    setTimeout(function(){ attribText4.classList.add("attribText");}, 5000);
-  }
-}
+    //Menu Button
 
-/*Below allows the link colors to change according to the section. Currently there is only 2 to scroll between so
-this could be done with a couple line of code but this was copied from a codepen I made already and allows for
-other links to be added easliy in the future aswell as content to that section without much work.
- https://codepen.io/robthethief/pen/dyYvJVK */
+    function menuDown () {
+      dropdownContainer.classList.add("visible");
+      menuButton.classList.add("menuClicked");
+    }
+    function menuUp () {
+      dropdownContainer.classList.remove("visible");
+      menuButton.classList.remove("menuClicked");
+    }
 
-var menuBtnHomeVar = document.getElementById("menuBtnHome");
-var homeVar = document.getElementById("home");
-var menuBtnAboutVar = document.getElementById("menuBtnAbout");
-var aboutVar = document.getElementById("about");
-//Starting position for lastLink and lastLinkMenu as we arrive at "Home" and to avoid 'undefined' error
-var lastLink = document.getElementById("home");
-var lastLinkMenu = document.getElementById("menuBtnHome");
-
-function home() {
-      menuBtnHomeVar.classList.add("clicked-button-color");
-      homeVar.classList.add("clicked-button-color");
-      if (lastLink !== document.getElementById("home")){
-        lastLink.classList.remove("clicked-button-color");
-        lastLinkMenu.classList.remove("clicked-button-color");
+    function menuBtn() {
+      if (buttonState == 0){
+        menuDown ();
+        buttonState = 1;
+      }else{
+        buttonState = 0;
+        menuUp ();
       }
-      lastLink = document.getElementById("home");
-      lastLinkMenu = document.getElementById("menuBtnHome");
     }
-
-function about() {
-      menuBtnAboutVar.classList.add("clicked-button-color");
-      aboutVar.classList.add("clicked-button-color");
-      if (lastLink !== document.getElementById("about")){
-        lastLink.classList.remove("clicked-button-color");
-        lastLinkMenu.classList.remove("clicked-button-color");
+    //Closes hamburger menu
+    function hamburgler() {
+      if (buttonState == 1){
+        buttonState = 0;
+        menuUp ();
       }
-      lastLink = document.getElementById("about");
-      lastLinkMenu = document.getElementById("menuBtnAbout");
     }
 
-//Detects what section the page is scrolled to and changes the color of the menu and nav bar links
-    function scrollingLinkColor() {
-//total height of each element specified
-      var ap = aboutSection.offsetHeight;
+    function scrolling() {
+      hamburgler();
+      scrollingLinkColor();
+      if (window.pageYOffset = scrollTrigger) {
+        attributes1.classList.add("attribContainer1");
+        attribSymbol1.classList.add("attribSymbol");
+        attributes1.classList.remove("preScroll");
+        setTimeout(function(){ attribText1.classList.add("attribText"); }, 2000);
 
-//Gets scroll height from top of page to each element specified and total height of element using .top and .height
-      var ab = myHeader.getBoundingClientRect();
+        setTimeout(function(){
+        attributes2.classList.add("attribContainer2");
+        attributes2.classList.remove("preScroll");
+        attribSymbol2.classList.add("attribSymbol"); }, 1000);
+        setTimeout(function(){ attribText2.classList.add("attribText");}, 3000);
 
-      if (ab.top <= ab.height && ab.top >= -ap-ab.height){
-        about();
-      }else {home();}
+
+        setTimeout(function(){ attributes3.classList.add("attribContainer3");
+        attributes3.classList.remove("preScroll");
+        attribSymbol3.classList.add("attribSymbol");}, 2000);
+        setTimeout(function(){ attribText3.classList.add("attribText");}, 4000);
+
+        setTimeout(function(){ attributes4.classList.add("attribContainer4");
+        attributes4.classList.remove("preScroll");
+        attribSymbol4.classList.add("attribSymbol");}, 3000);
+        setTimeout(function(){ attribText4.classList.add("attribText");}, 5000);
+      }
     }
-//run once to accomodate to give color on arrival or refresh
-scrollingLinkColor();
 
-</script>
+    /*Below allows the link colors to change according to the section. Currently there is only 2 to scroll between so
+    this could be done with a couple of lines of code but this was copied from a codepen I created already and allows for
+    other links to be added easliy in the future, aswell as content to that section without much work.
+     https://codepen.io/robthethief/pen/dyYvJVK */
 
-<script src="particles.js"></script>
-<script src="js/app.js"></script>
+    var menuBtnHomeVar  = document.getElementById("menuBtnHome");
+    var homeVar         = document.getElementById("home");
+    var menuBtnAboutVar = document.getElementById("menuBtnAbout");
+    var aboutVar        = document.getElementById("about");
 
+    //Starting position for lastLink and lastLinkMenu as we arrive at "Home" and to avoid 'undefined' error
+    var lastLink        = document.getElementById("home");
+    var lastLinkMenu    = document.getElementById("menuBtnHome");
+
+    function revertLastLinkToDefaultColor () {
+      lastLink.classList.remove("clicked-button-color");
+      lastLinkMenu.classList.remove("clicked-button-color");
+    }
+
+    function home() {
+          menuBtnHomeVar.classList.add("clicked-button-color");
+          homeVar.classList.add("clicked-button-color");
+          if (lastLink !== document.getElementById("home")){
+            revertLastLinkToDefaultColor ();
+          }
+          lastLink = document.getElementById("home");
+          lastLinkMenu = document.getElementById("menuBtnHome");
+        }
+
+    function about() {
+          menuBtnAboutVar.classList.add("clicked-button-color");
+          aboutVar.classList.add("clicked-button-color");
+          if (lastLink !== document.getElementById("about")){
+            revertLastLinkToDefaultColor ();
+          }
+          lastLink = document.getElementById("about");
+          lastLinkMenu = document.getElementById("menuBtnAbout");
+        }
+
+    //Detects what section the page is scrolled to and changes the color of the menu and nav bar links
+        function scrollingLinkColor() {
+    //total height of each element specified
+          var ap = aboutSection.offsetHeight;
+
+    //Gets scroll height from top of page to each element specified and total height of element using .top and .height
+          var ab = myHeader.getBoundingClientRect();
+
+          if (ab.top <= ab.height && ab.top >= -ap-ab.height){
+            about();
+          }else {home();}
+        }
+    //run once to accomodate to give color on arrival or refresh
+    scrollingLinkColor();
+
+    </script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>

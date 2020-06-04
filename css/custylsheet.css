@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 
 html {
   scroll-behavior: smooth;
@@ -21,177 +20,404 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+.proj_div {
+  margin-left: 100px;
+  padding-left: 2rem;
+}
+
+/************Wanderlust*****************/
+
+.wanderContainer {
+  text-align: left;
+}
+
+.wander_proj {
+  text-align: center;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_desktop.jpg');
+  background-size: cover;
+  border: 0.3rem outset black;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.wander_logo {
+  margin: 5px 0 0 5px;
+}
+
+.weather {
+  position: relative;
+  padding: 5px;
+}
+
+.weather_h2 {
+  position: relative;
+  padding: 5px;
+}
+
+.container {
+  margin: auto;
+  visibility: hidden;
+}
+
+.weather {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 0.9;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.weather_h2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 0.9;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.weather {
+  width: 200px;
+  height: 260px;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.weathericon {
+  width: 150px;
+  height: 150px;
+}
+
+.venue {
+  text-align: center;
+  width: 275px;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.venueimage {
+  margin-top: 20px;
+  display:inline-block;
+}
+
+#venues {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.9;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.venues_h2 {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.9;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#destination {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  margin: auto;
+  text-align: center;
+  color: #27b7c1;
+}
+
+.sectiontitle {
+  width: 300px;
+  align-items: center;
+}
+
+.sectiontitle {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 3.4px;
+  margin: auto;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.sectiontitle_h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 3.4px;
+  color: #4a4a4a;
+  margin: auto;
+  text-align: center;
+}
+
+#venues {
+  display: flex;
+  justify-content: space-around;
+  min-height: 250px;
+}
+
+#weather {
+  display: flex;
+  justify-content: space-around;
+  min-height: 150px;
+}
+
+#city {
+  width: 286px;
+  height: 46px;
+  border-radius: 4px;
+  border: solid 2.5px #ffffff;
+  background-color: inherit;
+  opacity: 0.73;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.wander_disc {
+  height: 700px;
+  max-width:500px;
+  min-width: 300px;
+}
+
+.wander_button {
+  width: 140px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #27b7c1;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.94;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 650px) {
+  .wander_proj {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg');
+  }
+
+  .wanderContainer {
+    text-align: center;
+  }
+
+  #venues, #weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .venue, .weather {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+
+  .weather {
+    padding: 10px 20px;
+    height: 100%;
+  }
+}
+/***********************************/
+
+
 
 /************SPIDER GRAPH**********/
-.categories,
-.overall,
-li {
-    font-family: Raleway, sans-serif;
-    background-color: black;;
-    border-radius: 10px;
-}
-.in,
-.out,
-.overall,
-li {
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
-.in {
-    background-image: url(img/bggraph.png)
-}
-.thewholething {
+  .categories,
+  .overall,
+  li {
+      font-family: Raleway, sans-serif;
+      background-color: black;;
+      border-radius: 10px;
+  }
+  .in,
+  .out,
+  .overall,
+  li {
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  .in {
+      background-image: url(../img/bggraph.png);
+  }
+  .thewholething {
 
 
-}
+  }
 
-.graphNlabels {
-  flex-direction: row;
-}
+  .graphNlabels {
+    flex-direction: row;
+  }
 
+  .labelContainer {
+      width: 270px;
+      min-width: 200px;
+      position: relative;
+      right: -60px;
+  }
 
-.labelContainer {
-    width: 270px;
-    min-width: 200px;
-    position: relative;
-    right: -60px;
-}
-li {
-    font-size: 18pt;
-    padding: 2px 10px 5px;
-    margin: 3px;
-    width: 130px;
-}
-.label1 {
-    color: red;
-    width:250px;
-}
-.label2 {
-    color: #0ff;
-    width:250px;
-}
-.label3 {
-    color: #ff0;
-    width: 215px;
-}
-.label4 {
-    color: #c9c;
-    width: 108px;
-}
-.label5 {
-    color: #c9c;
-    width: 175px;
-}
+  li {
+      font-size: 18pt;
+      padding: 2px 10px 5px;
+      margin: 3px;
+      width: 130px;
+  }
 
-li span {
-    color: #8D8AD9;
-    font-size: 12pt
-}
+  .label1 {
+      color: red;
+      width:250px;
+  }
 
-.space {
-  opacity: 0;
-}
+  .label2 {
+      color: #0ff;
+      width:250px;
+  }
 
-.graph-bg {
-    width: 300px;
-    min-width: 300px;
-    height: 300px;
-    background-image: url(img/bggraph.png);
-    position: relative;
-    right: 80px;
-    top: 5px;
-}
-.graphContainer {
-    top: 16.5%;
-    left: 2.5%;
-    margin: auto;
-    position: relative;
-    width: 200px;
-    height: 200px
-}
-.statform {
-    margin: 0 auto;
-    width: 180px;
-    height: 180px;
-    position: absolute
-}
-.in {
-    clip-path: polygon(50% 5%, 3% 98%, 96% 97%);
-    background-color: #25486b;
-    background-position: 48% 42%;
-    animation-name: in-anim
-}
-.out {
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    background-color: rgba(80, 220, 220, .4);
-    animation-name: out-anim
-}
-li.label1 {
-    animation-name: label1-anim
-}
-li.label2 {
-    animation-name: label2-anim
-}
-li.label3 {
-    animation-name: label3-anim
-}
-li.label4 {
-    animation-name: label4-anim
-}
-li.label5 {
-    animation-name: label5-anim
-}
+  .label3 {
+      color: #ff0;
+      width: 215px;
+  }
+
+  .label4 {
+      color: #c9c;
+      width: 108px;
+  }
+
+  .label5 {
+      color: #c9c;
+      width: 175px;
+  }
+
+  li span {
+      color: #8D8AD9;
+      font-size: 12pt;
+  }
+
+  .lang {
+    text-align: left;
+  }
+
+  .land_score {
+    text-align: right;
+  }
+
+  .graph-bg {
+      width: 300px;
+      min-width: 300px;
+      height: 300px;
+      background-image: url(../img/bggraph.png);
+      position: relative;
+      right: 80px;
+      top: 5px;
+  }
+
+  .graphContainer {
+      top: 16.5%;
+      left: 2.5%;
+      margin: auto;
+      position: relative;
+      width: 200px;
+      height: 200px;
+  }
+
+  .statform {
+      margin: 0 auto;
+      width: 180px;
+      height: 180px;
+      position: absolute;
+  }
+
+  .in {
+      clip-path: polygon(50% 5%, 3% 98%, 96% 97%);
+      background-color: #25486b;
+      background-position: 48% 42%;
+      animation-name: in-anim;
+  }
+
+  .out {
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      background-color: rgba(80, 220, 220, .4);
+      animation-name: out-anim;
+  }
+
+  li.label1 {
+      animation-name: label1-anim;
+  }
+
+  li.label2 {
+      animation-name: label2-anim;
+  }
+
+  li.label3 {
+      animation-name: label3-anim;
+  }
+
+  li.label4 {
+      animation-name: label4-anim;
+
+  }
+
+  li.label5 {
+      animation-name: label5-anim;
+  }
 
 @keyframes in-anim {
     0%, 100%, 8% {/*JavaScript   */
         background-color: #561034;
-        clip-path: polygon(50% 45%, 28% 84%, 74% 85%)
+        clip-path: polygon(50% 45%, 28% 84%, 74% 85%);
     }
     20% {/* CSS  */
         background-color: #25486b;
-        clip-path: polygon(50% 40%, 28% 84%, 66% 82%)
+        clip-path: polygon(50% 40%, 28% 84%, 66% 82%);
     }
     40% {/* HTML  */
         background-color: #565034;
-        clip-path: polygon(50% 40%, 30% 82%, 62% 78%)
+        clip-path: polygon(50% 40%, 30% 82%, 62% 78%);
     }
     60% {/* PHP  */
         background-color: #3F3971;
-        clip-path: polygon(50% 65%, 35% 80%, 74% 85%)
+        clip-path: polygon(50% 65%, 35% 80%, 74% 85%);
     }
     80% {/* TailWindCSS  */
         background-color: #8D8AD9;
-        clip-path: polygon(50% 45%, 28% 84%, 66% 82%)
+        clip-path: polygon(50% 45%, 28% 84%, 66% 82%);
     }
 }
 @keyframes out-anim {
     0%, 100%, 8% {/*JavaScript   */
         background-color: red;
-        clip-path: polygon(50% 40%, 23% 86%, 79% 88%)
+        clip-path: polygon(50% 40%, 23% 86%, 79% 88%);
     }
     20% {/* CSS  */
         background-color: #0ff;
-        clip-path: polygon(50% 35%, 23% 86%, 69% 84%)
+        clip-path: polygon(50% 35%, 23% 86%, 69% 84%);
     }
     40% {/* HTML  */
         background-color: #ff0;
-        clip-path: polygon(50% 35%, 25% 86%, 65% 79%)
+        clip-path: polygon(50% 35%, 25% 86%, 65% 79%);
     }
     60% {/* PHP  */
         background-color: #8D8AD9;
-        clip-path: polygon(50% 60%, 30% 82%, 79% 88%)
+        clip-path: polygon(50% 60%, 30% 82%, 79% 88%);
     }
     80% {/* TailWindCSS  */
         background-color: #ff0;
-        clip-path: polygon(50% 40%, 23% 86%, 69% 84%)
+        clip-path: polygon(50% 40%, 23% 86%, 69% 84%);
     }
 }
 /*JavaScript   */
 @keyframes label1-anim {
     0%, 10%, 100% {
         background-color: #DD2941;
-
     }
     15%,
     90% {
@@ -211,37 +437,29 @@ li.label5 {
 @keyframes label3-anim {
     30%, 65% {
         background-color: black;
-
     }
     40% {
         background-color: #C9C815;
-
     }
 }
 /* PHP  */
 @keyframes label4-anim {
     50%, 90% {
         background-color: black;
-
     }
     55% {
         background-color: #c9c;
-
     }
 }
 /* TailWindCSS  */
 @keyframes label5-anim {
     0%,67%,100% {
         background-color: black;
-
     }
-
     75% {
         background-color: #C9C815;
-
     }
 }
-
 /*^^^^^^^^^^^^SPIDER GRAPH^^^^^^^^^^^^*/
 
 .clicked-button-color {
@@ -286,7 +504,7 @@ li.label5 {
   max-width: 200px;
   max-height: 200px;
   position: relative;
-  background: url("img/Thief.jpg") no-repeat;
+  background: url("../img/Thief2.jpg") no-repeat;
   background-position: -170% 40%;
   transition: .8s ease;
   right: 10px;
@@ -294,7 +512,7 @@ li.label5 {
 
 .borderTrans:hover {
   border-radius: 0px;
-  background-position: 37% 40%;
+  background-position: 42% 40%;
   transform: border-radius;
   transform: background-position;
 }
@@ -302,7 +520,7 @@ li.label5 {
 .borderTrans:hover .borderTransText {
   opacity: 1;
   color: #00CED1;
-  text-shadow: 1px 1px #00CED1;
+  text-shadow: 1px 1px black;
   font-size: 16px;
   transform: opacity;
 }
@@ -310,6 +528,7 @@ li.label5 {
 .borderTrans:hover .transBorderHead {
   top: 0px;
   left: -50px;
+  opacity: 0;
   transform: top;
 }
 
@@ -318,6 +537,7 @@ li.label5 {
   position:relative;
   top: 50px;
   left: 0px;
+  opacity: 1;
   transition: .8s ease;
 }
 
@@ -472,11 +692,11 @@ footer {
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
-.dudeProj {
+.dude_proj {
   overflow: hidden;
 }
 
-.breakProj {
+.proj_break {
   border-color: #00CED1;
   height: 100px;
   background-color: #000000;
@@ -488,10 +708,15 @@ footer {
   border-radius: 5px;
 }
 
-.navbar1Pic {
+.navbar1_pic {
   border: 0.3rem outset black;
   border-radius: 5px;
   min-width: 330px;
+}
+
+
+.codepen_disc {
+  max-width: 500px;
 }
 
 .copyright {
@@ -518,7 +743,7 @@ width: 10%;
   border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltip_text {
   visibility: hidden;
   width: 50px;
   background-color: #1f2021;
@@ -534,7 +759,7 @@ width: 10%;
   left: -40px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltip_text {
   visibility: visible;
 }
 
@@ -552,7 +777,7 @@ width: 10%;
   transition: .3s ease;
 }
 
-.overlayContainer {
+.overlay_container {
   position: relative;
 }
 
@@ -561,7 +786,7 @@ width: 10%;
   right: 0px;
 }
 
-.overlayContainer:hover .overlay {
+.overlay_container:hover .overlay {
   opacity: 0.5;
   transform: opacity;
 }
@@ -654,12 +879,32 @@ width: 10%;
 
 }
 
- @media only screen and (max-width:1100px) {
+ @media only screen and (max-width:1104px) {
+
+   .wanderContainer {
+     text-align: center;
+   }
+
+   .wander_proj {
+     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg');
+     text-align: center;
+   }
 
 }
 
 @media only screen and (max-width:1023px) {
 
+}
+
+@media only screen and (max-width:910px) {
+
+  .wander_div {
+    flex-direction: column;
+  }
+
+  .wander_disc {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width:840px) {
@@ -669,8 +914,10 @@ width: 10%;
     width: 100%;
   }
 
-  .projDiv {
+  .proj_div {
     flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0rem;
   }
 }
 
