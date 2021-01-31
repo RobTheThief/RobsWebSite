@@ -25,6 +25,39 @@ p {
   padding-left: 2rem;
 }
 
+.proj_index {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+  color: black;
+}
+
+.proj_index:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: black;
+  -webkit-transition: all .3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.proj_index:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 /************Wanderlust*****************/
 
 .wanderContainer {
@@ -517,12 +550,23 @@ p {
   transform: background-position;
 }
 
+.borderTransText {
+  font-weight: 900;
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
 .borderTrans:hover .borderTransText {
   opacity: 1;
   color: #00CED1;
   text-shadow: 1px 1px black;
   font-size: 16px;
   transform: opacity;
+  transition: 0.5s;
+}
+
+.border_trans_link:hover {
+  color: #008080 !important;
 }
 
 .borderTrans:hover .transBorderHead {
@@ -555,7 +599,6 @@ p {
 p.attribText {
   opacity: 1 ;
   transform: opacity;
-
 }
 
 .attribContainer1 {
@@ -578,7 +621,6 @@ p.attribText {
   position: relative;
   animation-name: initImageSlideLeft;
   animation-duration: 2s;
-
 }
 
 .attribContainer4 {
@@ -628,12 +670,6 @@ p.attribText {
   100% {transform: scaleX(1);}
   from {opacity: 0;}
   to {opacity: 1;}
-}
-
-.borderTransText {
-  font-weight: 900;
-  opacity: 0;
-  transition: 1.5s ease;
 }
 
 .logo {
@@ -809,7 +845,7 @@ width: 10%;
   border-width: 1px;
   border-color:black;
   border-radius: 50px 20px;
-  background: url("img/hoverbuttonBlackBluTop.jpg") no-repeat;
+  background: url("../img/hoverbuttonBlackBluTop.jpg") no-repeat;
   font-family: 'Raleway', sans-serif;
   color: white;
   opacity: 1;

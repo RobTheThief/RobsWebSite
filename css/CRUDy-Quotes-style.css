@@ -1,22 +1,22 @@
-
-#quote, #quote_name {
+#quote,
+#quote_name {
   box-sizing: border-box;
-  border: 1px solid #00CED1;
+  border: 1px solid #00ced1;
   border-radius: 5px;
   box-shadow: none;
   background-blend-mode: overlay;
-  background-color: rgba(0,0,0,0.8);
-  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 #crud_head {
-  color: #00CED1;
-  font-family: fantasy;
+  color: #00ced1;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 4px;
 }
 
 #list_head {
-  color: #00CED1;
+  color: #00ced1;
 }
 
 #list_quotes {
@@ -26,17 +26,17 @@
   text-align: left;
   padding: 5px;
   box-sizing: border-box;
-  border: 1px solid #00CED1;
+  border: 1px solid #00ced1;
   border-radius: 5px;
   box-shadow: none;
   background-blend-mode: overlay;
-  background-color: rgba(0,0,0,0.8);
-  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 .crudy_description {
   height: 600px;
-  max-width:500px;
+  max-width: 500px;
   min-width: 300px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .crud_wrap h2 {
-  font-family: fantasy;
+  font-family: "Raleway", sans-serif;
 }
 
 .crud_button_overlays {
@@ -63,22 +63,20 @@
   background-color: black;
   padding: 5px;
   margin: 3px;
-  box-shadow: 1px 1px #00CED1;
-  font-family: fantasy;
+  box-shadow: 1px 1px #00ced1;
+  font-family: "Raleway", sans-serif;
   border-radius: 10px;
 }
 
 #no_delete_message {
-  color: #00CED1;
+  color: #00ced1;
   height: 20px;
   font-size: 12px;
 }
 
-@media only screen and (max-width:840px) {
-
+@media only screen and (max-width: 840px) {
   .crudy_description {
     height: 300px;
     margin-top: 20px;
   }
-
 }

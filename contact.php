@@ -43,7 +43,7 @@
 
 
   <div class="px-10 pb-0 flex inline-block">
-    <p class="w-full text-center sm:text-2xl lg:text-base"><b>Please leave me a message if you have any questions about my work. <br>I would love to hear from you!</p>
+    <p class="w-full text-center pt-20 sm:text-2xl lg:text-base lg:pt-0 md:pt-0 sm:pt-0"><b>Please leave me a message if you have any questions about my work. <br>I would love to hear from you!</p>
   </div>
 
 
