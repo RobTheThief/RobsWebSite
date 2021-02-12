@@ -58,6 +58,27 @@ p {
   transform: scaleX(1);
 }
 
+#topButton {
+  display: none;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-image: url(../img/back-to-top-icon.jpg);
+  background-size: 50px 50px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topButton:hover {
+  background-image: url(../img/back-to-top-icon-hover.png);
+}
+
 /************Wanderlust*****************/
 
 .wanderContainer {
@@ -261,6 +282,15 @@ p {
 }
 /***********************************/
 
+/********nexTime********************/
+
+.nexTime_container {
+  flex-direction: column;
+}
+
+.nexTimeProj_div {
+  margin-left: 100px;
+}
 
 
 /************SPIDER GRAPH**********/
@@ -750,9 +780,14 @@ footer {
   min-width: 330px;
 }
 
+.nexTimeSplash_pic{
+  border: 0.3rem outset black;
+  border-radius: 5px;
+  max-width: 330px;
+}
 
 .codepen_disc {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .copyright {
@@ -950,11 +985,16 @@ width: 10%;
     width: 100%;
   }
 
-  .proj_div {
+  .proj_div, .nexTimeProj_div {
     flex-direction: column;
     margin-left: 0px;
     padding-left: 0rem;
   }
+
+  #topButton {
+    background-image: url(../img/back-to-top-icon-hover.png);
+  }
+
 }
 
 

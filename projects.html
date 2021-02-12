@@ -41,9 +41,11 @@
 
 
 
-  <main class ="w-full inline-block bg-gray-200">
+  <main class ="w-full inline-block bg-gray-200" style = "top:0%; padding-top: 0%;">
 
-    <div class="px-10 inline-block">
+    <a onclick="backtoTop()" id="topButton" title="Go to top"></a>
+
+    <div class="inline-block pt-10 sm:pt-0 lg:pt-0 md:pt-0">
       <a href="https://github.com/RobTheThief" class="w-full text-left pt-0 sm:pt-0 text-xl underline " target="_blank"><b><br><br>GitHub Projects Link</a>
     </div>
 
@@ -57,131 +59,89 @@
           <td><a href="#wander_bar" class="inline-block px-5 proj_index"><b><br><br>Wanderlust</a></td>
           <td><a href="#crudy_bar" class="inline-block px-5 proj_index"><b><br><br>CRUDy-Quotes</a></td>
         </tr>
+        <tr class = "text-center">
+          <td><a href="#nexTime_bar" class="inline-block px-5 proj_index"><b><br><br>nexTime</a></td>
+        </tr>
       </table>
     </div>
-
+     
   <br></br>
   <br></br>
-  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "calc_bar"></div>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "nexTime_bar"></div>
   <br></br>
   <br></br>
 
-  <!-- PROJECT CALCULATOR -->
-  <div class = "proj_div flex md:flex-col lg:flex-row pl-6 text-center">
-    <div class = "calc_div inline-block">
-      <br>
-      <h1 class=" calc_title font-serif font-bold text-xl text-left">ROBULATOR</h1>
-      <br>
-
-      <form onkeypress="return event.keyCode != 13" class="pr-5"> <!-- !=13 to prevent enter refeshing the page -->
-        <table>
-          <tr>
-              <td><div class="font-serif" id="modeDisp"></div> </td>
-              <td><label class="switch"><input type="checkbox" id="modeCheckbox" onclick="calcMode()" ><span class="slider round"></span></label></td>
-          </tr>
-        </table>
-
-        <div class="text-left" id="modeExample"></div>
+  <!--****** NEXTIME PROJECT ***************-->
+  <div class = "nexTimeProj_div flex p-4 items-left sm:items-center">
+    <img class="inline-block nexTimeSplash_pic" src="img/nextimeimg_a.png" alt="nexTime splash" height="800" width="600">
+    <div class = "nexTime_container flex items-center inline-block">
+     
+       <p class="invisible lg:visible text-center text-xl"><u>nexTime Android App</u></p>
+      <div class = "flex flex-col sm:flex-row p-4 pt-0 lg:pt-4 lg:pb-20 text-center inline-block">
+        <img class="m-4 inline-block nexTimeSplash_pic mb-6 lg:mb-4" src="img/nexTime_featureGraphic.png" alt="nexTime feature graphic">
+        <iframe class="m-4 nexTimeSplash_pic " width="330" height="168" src="https://www.youtube.com/embed/x5bcwPOAnP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  
+      <div class="p-4 pl-6 text-left sm:text-center codepen_disc inline-block">
+        <p class="align-text-top text-left">
+          <br>nexTime is an android reminder app based on location.  It uses GPS, Wifi and Bluetooth to detect location or wireless devices which triggers a reminder set by the user.  The app is built using React Native.
           <br>
-
-        <div id="IO">
-            <input class="pl-2" type="text" name="input" id="input" placeholder="INPUT">
-            <div class="pl-2 text-left" id="result"></div>
-        </div>
-      </form>
-      <br>
-
-       <table id = "button_table">
-         <button style = "" type="button" id="button2" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
-         <br>
-
-         <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="button3" class="font-bold text-lg py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="clear1()">C</button></td>
-          <td><button type="button" id="button4" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="multiplyIt()">*</button></td>
-          <td><button type="button" id="button5" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="divideIt()">/</button></td>
-          <td><button type="button" id="button19" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="percentage()">%</button></td>
-        </tr>
-
-         <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="button16" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="decimal()">.</button></td>
-          <td><button type="button" id="button18" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="plusNum()">+</button></td>
-          <td><button type="button" id="button17" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="minusNum()">-</button></td>
-          <td><button type="button" id="button20" class="font-extrabold py-1 px-3 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="backButton()">BK</button></td>
-        </tr>
-
-        <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="button6" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num1()">1</button></td>
-          <td><button type="button" id="button7" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num2()">2</button></td>
-          <td><button type="button" id="button8" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num3()">3</button></td>
-        </tr>
-
-        <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="button9" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num4()">4</button></td>
-          <td><button type="button" id="button10" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num5()">5</button></td>
-          <td><button type="button" id="button11" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num6()">6</button></td>
-        </tr>
-
-        <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="button12" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num7()">7</button></td>
-          <td><button type="button" id="button13" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num8()">8</button></td>
-          <td><button type="button" id="button14" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num9()">9</button></td>
-        </tr>
-
-        <tr class="grid grid-cols-4 gap-2">
-          <td><button type="button" id="ghostButton" class="bg-transparent text-transparent cursor-not-allowed py-2 px-2 rounded" >0</button></td>
-          <td><button type="button" id="button15" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num0()">0</button></td>
-        </tr>
-
-       </table>
-    </div> <!-- End CalcDiv Container-->
-
-     <div class = "p-4 pl-1 pt-0 inline-block align-text-top text-left">
-      <p class = "lg:pl-10">
-        <span class="text-xl underline text-left"><br>Robulator!</span><br><br>
-          After learning the basics of CSS, HTML and JavaScript
-          I decided that my first project, as it is for
-          many, should be a calculator. The only framework
-          used was TailWindCSS.<br></br>
-
-          It has 2 modes: Algebra and Robulator mode. In
-          Algebra mode, which is the default and the standard
-          for most calculators, multiplication and division
-          is done before addition and subtraction.<br></br>
-
-          Robulator mode essentially calculates from left
-          to right.  The idea was to reflect how you might calculate
-          something in a story. E.g. I had 4 biscuits and then Mom
-          gave me 2 more, but Tom stole 3.  Harry then said that
-          if I gave him one now he would give me back as many
-          as i had left again. I would then have 4 biscuits.
-          4+2-3-1*2 = 4.  In Algebra mode the answer would be 1.<br></br>
-          <a href="https://github.com/RobTheThief/Calculator.git" class="sm:text-2xl lg:text-base underline" target="_blank">GitHub Repository</a>
-          <br></br>
-      </p>
-    </div>
-  </div>
-
-  <br></br>
-  <br></br>
-  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "codepen_bar"></div>
-  <br></br>
-  <br></br>
-
-  <!--****** CODEPEN PROJECT ***************-->
-  <div class = "proj_div flex p-4 items-center text-center">
-    <img class="inline-block navbar1_pic" src="img/navbar1CodepenPic.png" alt="Nav Bar and Footer Codepen Pic" height="800" width="600">
-    <div class="p-4 pl-6 inline-block codepen_disc">
-      <p class="text-left text-xl"><u>Nav Bar and Footer Codepen</u></p>
-      <p class="align-text-top text-left">
-        <br>This is my first codepen project.  I basically took the nav bar and footer from this website but translated the TailWindCSS into vanilla CSS. Doing this also led to some improvements and these were then added to this website.
+        </p>
         <br>
-      </p>
-      <br>
-      <div class="text-left"><a href="https://github.com/RobTheThief/navbar1.git" class="sm:text-2xl lg:text-base underline " target="_blank">GitHub Repository</a></div>
-      <div class="text-left"><a href="https://codepen.io/robthethief/pen/dyYvJVK" class="sm:text-2xl lg:text-base underline " target="_blank">Codepen</a></div>
+        <div class="text-left"><a href="https://github.com/RobTheThief/nexTime" class="sm:text-2xl lg:text-base underline " target="_blank">GitHub Repository</a></div>
+      </div>
+
     </div>
   </div>
 
+  <br></br>  
+  <br></br>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "crudy_bar"></div>
+  <br></br>
+  <br></br>
+
+  <!--************************* CRUDy Quotes Project ********************-->
+  <div class = "proj_div flex p-4 items-center text-center">
+    <div class="crud_wrap">
+            <h1 id = "crud_head">CRUDy-Quotes API</h1>
+            <form>
+              <input id = 'quote_name' type="text" placeholder="Name">
+              <input id = 'quote' type="text" placeholder="Quote">
+              <div id="no_delete_message"></div>
+            </form>
+
+            <button id = 'submit_quote' class = "quote_buttons overlay_container" >Submit<div class="overlay crud_button_overlays"></div></button>
+            <button id = 'delete_quote' class = "quote_buttons overlay_container" type="delete">Delete<div class="overlay crud_button_overlays"></div></button>
+            <button id = 'update_one_quote' class = "quote_buttons overlay_container" >Update By Name<div class="overlay crud_button_overlays"></div></button>
+            <button id = 'list_quotes_btn' class = "quote_buttons overlay_container" >Refresh Quotes<div class="overlay crud_button_overlays"></div></button>
+            <br></br>
+            <h2 id = "list_head"> Quotes </h2>
+              <span id = 'list_quotes'></span>
+      </div>
+
+      <div class="p-4 pl-6 inline-block crudy_description">
+        <p class="text-left text-xl"><u>CRUDy Quotes API Project</u></p>
+        <p class="align-text-top text-left">
+          <br>To learn more about HTTP requests I decided to create my own API.
+              This involved Node.js, Express to run the server and create the
+              routes, and MongoDB to manage the JSON database. As the current
+              hosting does not support VPS, Heroku was used to host the API.
+              The server renders HTML and can be accesed through
+              <a href="https://crudy-quotes.herokuapp.com/" target="_blank" class = "">https://crudy-quotes.herokuapp.com/</a>
+              or queries can be sent through a third parties as CORS is allowed.
+              It uses HTTP/1.1 although it was initially intended to have HTTP/2
+              but an SSL certificate was required for Heroku.
+          <br>
+        </p>
+        <br>
+        <div class="text-left"><a href="https://github.com/RobTheThief/CRUDy-Quotes.git" class="sm:text-2xl lg:text-base underline " target="_blank">GitHub Repository</a></div>
+      </div>
+  </div>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
   <br></br>
   <br></br>
   <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "wander_bar"></div>
@@ -251,57 +211,132 @@
   <br></br>
   <br></br>
   <br></br>
-  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "crudy_bar"></div>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "codepen_bar"></div>
   <br></br>
   <br></br>
 
-  <!--************************* CRUDy Quotes Project ********************-->
+  <!--****** CODEPEN PROJECT ***************-->
   <div class = "proj_div flex p-4 items-center text-center">
-      <div class="crud_wrap">
-              <h1 id = "crud_head">CRUDy-Quotes API</h1>
-              <form>
-                <input id = 'quote_name' type="text" placeholder="Name">
-                <input id = 'quote' type="text" placeholder="Quote">
-                <div id="no_delete_message"></div>
-              </form>
+    <img class="inline-block navbar1_pic" src="img/navbar1CodepenPic.png" alt="Nav Bar and Footer Codepen Pic" height="800" width="600">
+    <div class="p-4 pl-6 inline-block codepen_disc">
+      <p class="text-left text-xl"><u>Nav Bar and Footer Codepen</u></p>
+      <p class="align-text-top text-left">
+        <br>This is my first codepen project.  I basically took the nav bar and footer from this website but translated the TailWindCSS into vanilla CSS. Doing this also led to some improvements and these were then added to this website.
+        <br>
+      </p>
+      <br>
+      <div class="text-left"><a href="https://github.com/RobTheThief/navbar1.git" class="sm:text-2xl lg:text-base underline " target="_blank">GitHub Repository</a></div>
+      <div class="text-left"><a href="https://codepen.io/robthethief/pen/dyYvJVK" class="sm:text-2xl lg:text-base underline " target="_blank">Codepen</a></div>
+    </div>
+  </div>
 
-              <button id = 'submit_quote' class = "quote_buttons overlay_container" >Submit<div class="overlay crud_button_overlays"></div></button>
-              <button id = 'delete_quote' class = "quote_buttons overlay_container" type="delete">Delete<div class="overlay crud_button_overlays"></div></button>
-              <button id = 'update_one_quote' class = "quote_buttons overlay_container" >Update By Name<div class="overlay crud_button_overlays"></div></button>
-              <button id = 'list_quotes_btn' class = "quote_buttons overlay_container" >Refresh Quotes<div class="overlay crud_button_overlays"></div></button>
-              <br></br>
-              <h2 id = "list_head"> Quotes </h2>
-                <span id = 'list_quotes'></span>
-        </div>
+  <br></br>  
+  <br></br>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "calc_bar"></div>
+  <br></br>
+  <br></br>
 
-        <div class="p-4 pl-6 inline-block crudy_description">
-          <p class="text-left text-xl"><u>CRUDy Quotes API Project</u></p>
-          <p class="align-text-top text-left">
-            <br>To learn more about HTTP requests I decided to create my own API.
-                This involved Node.js, Express to run the server and create the
-                routes, and MongoDB to manage the JSON database. As the current
-                hosting does not support VPS, Heroku was used to host the API.
-                The server renders HTML and can be accesed through
-                <a href="https://crudy-quotes.herokuapp.com/" target="_blank" class = "">https://crudy-quotes.herokuapp.com/</a>
-                or queries can be sent through a third parties as CORS is allowed.
-                It uses HTTP/1.1 although it was initially intended to have HTTP/2
-                but an SSL certificate was required for Heroku.
-            <br>
-          </p>
+  <!-- PROJECT CALCULATOR -->
+  <div class = "proj_div flex md:flex-col lg:flex-row pl-6 text-center">
+    <div class = "calc_div inline-block">
+      <br>
+      <h1 class=" calc_title font-serif font-bold text-xl text-left">ROBULATOR</h1>
+      <br>
+
+      <form onkeypress="return event.keyCode != 13" class="pr-5"> <!-- !=13 to prevent enter refeshing the page -->
+        <table>
+          <tr>
+              <td><div class="font-serif" id="modeDisp"></div> </td>
+              <td><label class="switch"><input type="checkbox" id="modeCheckbox" onclick="calcMode()" ><span class="slider round"></span></label></td>
+          </tr>
+        </table>
+
+        <div class="text-left" id="modeExample"></div>
           <br>
-          <div class="text-left"><a href="https://github.com/RobTheThief/CRUDy-Quotes.git" class="sm:text-2xl lg:text-base underline " target="_blank">GitHub Repository</a></div>
+
+        <div id="IO">
+            <input class="pl-2" type="text" name="input" id="input" placeholder="INPUT">
+            <div class="pl-2 text-left" id="result"></div>
         </div>
+      </form>
+      <br>
+
+      <table id = "button_table">
+        <button style = "" type="button" id="button2" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="submit1()">Robulate!</button>
+        <br>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="button3" class="font-bold text-lg py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="clear1()">C</button></td>
+          <td><button type="button" id="button4" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="multiplyIt()">*</button></td>
+          <td><button type="button" id="button5" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="divideIt()">/</button></td>
+          <td><button type="button" id="button19" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="percentage()">%</button></td>
+        </tr>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="button16" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="decimal()">.</button></td>
+          <td><button type="button" id="button18" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="plusNum()">+</button></td>
+          <td><button type="button" id="button17" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="minusNum()">-</button></td>
+          <td><button type="button" id="button20" class="font-extrabold py-1 px-3 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="backButton()">BK</button></td>
+        </tr>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="button6" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num1()">1</button></td>
+          <td><button type="button" id="button7" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num2()">2</button></td>
+          <td><button type="button" id="button8" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num3()">3</button></td>
+        </tr>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="button9" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num4()">4</button></td>
+          <td><button type="button" id="button10" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num5()">5</button></td>
+          <td><button type="button" id="button11" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num6()">6</button></td>
+        </tr>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="button12" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num7()">7</button></td>
+          <td><button type="button" id="button13" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num8()">8</button></td>
+          <td><button type="button" id="button14" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num9()">9</button></td>
+        </tr>
+
+        <tr class="grid grid-cols-4 gap-2">
+          <td><button type="button" id="ghostButton" class="bg-transparent text-transparent cursor-not-allowed py-2 px-2 rounded" >0</button></td>
+          <td><button type="button" id="button15" class="font-extrabold py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded" onclick="num0()">0</button></td>
+        </tr>
+
+      </table>
+    </div> <!-- End CalcDiv Container-->
+
+    <div class = "p-4 pl-1 pt-0 inline-block align-text-top text-left">
+      <p class = "lg:pl-10">
+        <span class="text-xl underline text-left"><br>Robulator!</span><br><br>
+          After learning the basics of CSS, HTML and JavaScript
+          I decided that my first project, as it is for
+          many, should be a calculator. The only framework
+          used was TailWindCSS.<br></br>
+
+          It has 2 modes: Algebra and Robulator mode. In
+          Algebra mode, which is the default and the standard
+          for most calculators, multiplication and division
+          is done before addition and subtraction.<br></br>
+
+          Robulator mode essentially calculates from left
+          to right.  The idea was to reflect how you might calculate
+          something in a story. E.g. I had 4 biscuits and then Mom
+          gave me 2 more, but Tom stole 3.  Harry then said that
+          if I gave him one now he would give me back as many
+          as i had left again. I would then have 4 biscuits.
+          4+2-3-1*2 = 4.  In Algebra mode the answer would be 1.<br></br>
+          <a href="https://github.com/RobTheThief/Calculator.git" class="sm:text-2xl lg:text-base underline" target="_blank">GitHub Repository</a>
+          <br></br>
+      </p>
+    </div>
   </div>
 
   <br></br>
   <br></br>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = ""></div>
   <br></br>
   <br></br>
-  <br></br>
-  <br></br>
-  <div class="proj_break border-4 border-l-0 border-r-0 w-full"></div>
-  <br></br>
-  <br></br>
+
 
   <div class="inline-block w-1/2 dude_proj">
     <h2 class="text-left lg:pl-10 xl:py-10">Next project....</h2>
@@ -339,16 +374,32 @@
     </div>
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="./js/wanderlust/helpers.js"></script>
-  <script src="./js/wanderlust/main.js"></script>
-  <script src="./js/CRUDy-Quotes/CRUDy-Quotes-main.js"></script>
-  <script src = "./js/Robulator/robulator.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="./js/wanderlust/helpers.js"></script>
+    <script src="./js/wanderlust/main.js"></script>
+    <script src="./js/CRUDy-Quotes/CRUDy-Quotes-main.js"></script>
+    <script src = "./js/Robulator/robulator.js"></script>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
+
+      //Back to Top Button
+      var topButton = document.getElementById("topButton");
+
+      function backtoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function showHideTopButton() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      }
 
       //Menu in Nav Bar
       var buttonState = 0;
@@ -380,11 +431,14 @@
         }
       }
 
+      //When the user scrolls
       window.onscroll = function() {scrolling()};
 
       function scrolling() {
         hamburgler();
+        showHideTopButton();
       }
+        
 
     </script>
   </body>
