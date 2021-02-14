@@ -10,14 +10,16 @@
   <link rel="stylesheet" href="css/custylsheet.css"> <!--Custom css outside framework. Has priority-->
   <link rel="stylesheet" href="css/oldcssbkupb4tailwind.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="css/outlineText.css">
   <link rel="icon" href="img/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="preload" href="./img/back-to-top-icon-hover.png" as="image">
 </head>
 
 
-  <body >
+  <body>
 
     <nav class="header my-sticky flex items-center text-left w-full border-4 border-t-0 border-l-0 border-r-0 pl-4 py-6">
 
@@ -43,26 +45,58 @@
 
   <main class ="w-full inline-block bg-gray-200" style = "top:0%; padding-top: 0%;">
 
-    <a onclick="backtoTop()" id="topButton" title="Go to top"></a>
-
-    <div class="inline-block pt-10 sm:pt-0 lg:pt-0 md:pt-0">
-      <a href="https://github.com/RobTheThief" class="w-full text-left pt-0 sm:pt-0 text-xl underline " target="_blank"><b><br><br>GitHub Projects Link</a>
+    <div id="back_to_top_container">
+      <a onclick="backtoTop()" id="topButton" title="Go to top"></a>
+      <img src="./img/back-to-top-icon.png" alt="back to top button" id="back_to_top_icon_under">
     </div>
 
-    <div class = "text-center">
-      <table class = "inline-block">
-        <tr class = "text-center">
-          <td><a href="#calc_bar" class="inline-block px-5 proj_index"><b><br><br>Robulator</a></td>
-          <td><a href="#codepen_bar" class="inline-block px-5 proj_index"><b><br><br>Navbar and footer<br>Codepen</a></td>
-        </tr>
-        <tr class = "text-center">
-          <td><a href="#wander_bar" class="inline-block px-5 proj_index"><b><br><br>Wanderlust</a></td>
-          <td><a href="#crudy_bar" class="inline-block px-5 proj_index"><b><br><br>CRUDy-Quotes</a></td>
-        </tr>
-        <tr class = "text-center">
-          <td><a href="#nexTime_bar" class="inline-block px-5 proj_index"><b><br><br>nexTime</a></td>
-        </tr>
-      </table>
+    
+    <div class="mt-20 lg:mt-5" >
+      <div class=" github_link_container items-center text-center flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
+        <img class = " githublogo " src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="
+          height="35" width="35">
+        <a href="https://github.com/RobTheThief" class="text-center pt-1 mx-2 text-xl github_link link_line_effect" target="_blank" style="color: black" >RobTheThief GitHub</a>
+        <img class = " link_logo" src="img/link-icon.png" height="30" width="30">
+      </div>
+    </div>
+
+    <!--Project Menu-->
+    <div class="flex flex-col sm:flex-row text-right">
+      <div class=" flex flex-col proj_index_pics">
+        <a href="#nexTime_bar" class="inline-block px-5 my-2 text-center proj_index">nexTime App</a>
+        <a class = "proj_index_pics inline-block overlay_container" href="#nexTime_bar">
+          <img src="./img/nextimeimg_a.png" height ="300" width="200" alt="nexTime App">
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class=" flex flex-col proj_index_pics">
+        <a href="#crudy_bar" class="inline-block px-5 my-2 text-center proj_index">CRUDy-Quotes API</a>
+        <a class = "proj_index_pics inline-block overlay_container" href="#crudy_bar">
+          <img src="./img/CRUDy-Quotes-Graphic.png" height ="300" width="195" alt="crudy-quotes">
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class=" flex flex-col proj_index_pics">
+        <a href="#wander_bar" class="inline-block px-5 my-2 text-center proj_index">Wanderlust</a>
+        <a class = "proj_index_pics inline-block overlay_container" href="#wander_bar">
+          <img src="./img/wanderlust-Feature.png" height ="300" width="195" alt="Wanderlust">
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class=" flex flex-col proj_index_pics">
+        <a href="#codepen_bar" class="inline-block px-5 my-2 text-center proj_index">Nav Bar Codepen</a>
+      <a class = " inline-block overlay_container" href="#codepen_bar">
+        <img src="./img/navbar-codepen-feature.png" height ="300" width="195" alt="Nav Bar Codepen">
+        <div class="overlay"></div>
+      </a>
+      </div>
+      <div class=" flex flex-col proj_index_pics">
+        <a href="#calc_bar" class="inline-block px-5 my-2 text-center proj_index">Robulator</a>
+        <a class = " inline-block overlay_container" href="#calc_bar">
+          <img src="./img/calc-feature.png" height ="300" width="195" alt="Robulator" >
+          <div class="overlay"></div>
+        </a>
+      </div>
     </div>
      
   <br></br>
@@ -394,10 +428,10 @@
       }
 
       function showHideTopButton() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topButton.style.display = "block";
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
+          back_to_top_container.style.display = "block";
         } else {
-          topButton.style.display = "none";
+          back_to_top_container.style.display = "none";
         }
       }
 
