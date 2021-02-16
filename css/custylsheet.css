@@ -397,7 +397,7 @@ a{
   .out,
   .overall,
   li {
-      animation-duration: 25s;
+      animation-duration: 20s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
   }
@@ -429,27 +429,37 @@ a{
 
   .label1 {
       color: red;
-      width:250px;
+      width:275px;
   }
 
   .label2 {
       color: #0ff;
-      width:250px;
+      width:253px;
   }
 
   .label3 {
       color: #ff0;
-      width: 215px;
+      width: 253px;
   }
 
   .label4 {
       color: #c9c;
-      width: 108px;
+      width: 119px;
   }
 
   .label5 {
       color: #c9c;
-      width: 175px;
+      width: 203px;
+  }
+
+  .label6 {
+    color: #c9c;
+    width: 253px;
+  }
+
+  .label7 {
+    color: #c9c;
+    width: 181px;
   }
 
   li span {
@@ -476,18 +486,17 @@ a{
   }
 
   .graphContainer {
-      top: 16.5%;
-      left: 2.5%;
+      
       margin: auto;
       position: relative;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
   }
 
   .statform {
       margin: 0 auto;
-      width: 180px;
-      height: 180px;
+      width: 300px;
+      height: 300px;
       position: absolute;
   }
 
@@ -518,102 +527,142 @@ a{
 
   li.label4 {
       animation-name: label4-anim;
-
   }
 
   li.label5 {
       animation-name: label5-anim;
   }
 
+  li.label6 {
+    animation-name: label6-anim;
+  }
+
+  li.label7 {
+    animation-name: label7-anim;
+  }
+
 @keyframes in-anim {
-    0%, 100%, 8% {/*JavaScript   */
+    0%, 100%, 8% {/* JavaScript   */
         background-color: #561034;
-        clip-path: polygon(50% 45%, 28% 84%, 74% 85%);
+        clip-path: polygon(49% 24%, 17% 78%, 82% 78.5%);
     }
-    20% {/* CSS  */
+    14.3% {/* CSS  */
         background-color: #25486b;
-        clip-path: polygon(50% 40%, 28% 84%, 66% 82%);
+        clip-path: polygon(49% 27%, 18% 77.5%, 80% 77%);
     }
-    40% {/* HTML  */
+    28.6% {/* HTML  */
         background-color: #565034;
-        clip-path: polygon(50% 40%, 30% 82%, 62% 78%);
+        clip-path: polygon(49% 27%, 18% 77.5%, 80% 77%);
     }
-    60% {/* PHP  */
+    42.9% {/* PHP  */
         background-color: #3F3971;
-        clip-path: polygon(50% 65%, 35% 80%, 74% 85%);
+        clip-path: polygon(49% 53%, 43% 62.5%, 80% 77%);
     }
-    80% {/* TailWindCSS  */
+    57.2% {/* TailWindCSS  */
         background-color: #8D8AD9;
-        clip-path: polygon(50% 45%, 28% 84%, 66% 82%);
+        clip-path: polygon(49% 34%, 26% 72.5%, 74% 73%);
+    }
+    71.5% {/* React / React Native  */
+      background-color: rgb(0, 238, 255);
+      clip-path: polygon(49% 27%, 18% 77.5%, 80% 77%);
+    }
+    85.8% {/* Express.js  */
+      background-color: rgb(255, 0, 85);
+      clip-path: polygon(49% 34%, 26% 72.5%, 74% 73%);
     }
 }
 @keyframes out-anim {
     0%, 100%, 8% {/*JavaScript   */
         background-color: red;
-        clip-path: polygon(50% 40%, 23% 86%, 79% 88%);
+        clip-path: polygon(49% 20%, 13% 80%, 86% 80.5%);
     }
-    20% {/* CSS  */
+    14.3% {/* CSS  */
         background-color: #0ff;
-        clip-path: polygon(50% 35%, 23% 86%, 69% 84%);
+        clip-path: polygon(49% 23%, 15% 79%, 83.5% 79%);
     }
-    40% {/* HTML  */
+    28.6% {/* HTML  */
         background-color: #ff0;
-        clip-path: polygon(50% 35%, 25% 86%, 65% 79%);
+        clip-path: polygon(49% 23%, 15% 79%, 83.5% 79%);
     }
-    60% {/* PHP  */
+    42.9% {/* PHP  */
         background-color: #8D8AD9;
-        clip-path: polygon(50% 60%, 30% 82%, 79% 88%);
+        clip-path: polygon(49% 50%, 40% 64%, 83.5% 79%);
     }
-    80% {/* TailWindCSS  */
+    57.2% {/* TailWindCSS  */
         background-color: #ff0;
-        clip-path: polygon(50% 40%, 23% 86%, 69% 84%);
+        clip-path: polygon(49% 30%, 23% 74%, 77% 75%);
+    }
+    71.5% {/* React / React Native  */
+      background-color: rgb(21, 255, 0);
+      clip-path: polygon(49% 23%, 15% 79%, 83.5% 79%);
+    }
+    85.8% {/* Express.js  */
+      background-color: rgb(255, 145, 0);
+      clip-path: polygon(49% 30%, 23% 74%, 77% 74.5%);
     }
 }
 /*JavaScript   */
 @keyframes label1-anim {
-    0%, 10%, 100% {
-        background-color: #DD2941;
-    }
-    15%,
-    90% {
+    14.3%,90% {
         background-color: black;
+    }
+    0%, 100% {
+      background-color: #DD2941;
     }
 }
 /* CSS  */
 @keyframes label2-anim {
-    0%, 10%, 100%, 40% {
+    0%, 10%, 28.6%, 100% {
         background-color: black;
     }
-    20% {
+    14.3% {
         background-color: #0CBCCC;
     }
 }
 /* HTML  */
 @keyframes label3-anim {
-    30%, 65% {
+    0%,25%, 42.9%, 100% {
         background-color: black;
     }
-    40% {
+    28.6% {
         background-color: #C9C815;
     }
 }
 /* PHP  */
 @keyframes label4-anim {
-    50%, 90% {
+    0%, 37%, 57.2%, 100% {
         background-color: black;
     }
-    55% {
+    42.9% {
         background-color: #c9c;
     }
 }
 /* TailWindCSS  */
 @keyframes label5-anim {
-    0%,67%,100% {
+    0%, 52%, 71.5%, 100% {
         background-color: black;
     }
-    75% {
+    57.2% {
         background-color: #C9C815;
     }
+}
+/* React / React Native  */
+@keyframes label6-anim {
+  0%, 66%, 85.8%,100% {
+      background-color: black;
+  }
+  71.5% {
+      background-color:rgb(21, 255, 0);
+  }
+}
+/* Express.js  */
+@keyframes label7-anim {
+  0%, 80.8%, 100% {
+      background-color: black;
+  }
+  85.8% {
+      background-color:rgb(255, 145, 0);
+  }
 }
 /*^^^^^^^^^^^^SPIDER GRAPH^^^^^^^^^^^^*/
 
