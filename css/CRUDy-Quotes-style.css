@@ -37,8 +37,12 @@
 
 .crudy_description {
   height: 600px;
-  max-width: 500px;
+  max-width: 650px;
   min-width: 300px;
+}
+
+.heroku_link {
+  color: blue;
 }
 
 .crud_wrap {

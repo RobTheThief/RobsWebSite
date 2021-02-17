@@ -384,6 +384,22 @@ a{
   margin-left: 100px;
 }
 
+.nexTime_disc {
+  max-width: 800px;
+  min-width: 300px;
+}
+
+.nexTimeSplash_pic{
+  border: 0.3rem outset black;
+  border-radius: 5px;
+  max-width: 330px;
+}
+
+/************* Calc   ****/
+.calc_disc {
+  max-width: 800px;
+}
+
 
 /************SPIDER GRAPH**********/
   .categories,
@@ -404,10 +420,6 @@ a{
   .in {
       background-image: url(../img/bggraph.png);
   }
-  .thewholething {
-
-
-  }
 
   .graphNlabels {
     flex-direction: row;
@@ -417,7 +429,7 @@ a{
       width: 270px;
       min-width: 200px;
       position: relative;
-      right: -60px;
+      right: -47px;
   }
 
   li {
@@ -476,12 +488,12 @@ a{
   }
 
   .graph-bg {
-      width: 300px;
-      min-width: 300px;
-      height: 300px;
-      background-image: url(../img/bggraph.png);
+      width: 322px;
+      min-width: 322px;
+      height: 322px;
+      background-image: url(../img/bggraph.png); 
       position: relative;
-      right: 80px;
+      right: 70px;
       top: 5px;
   }
 
@@ -489,14 +501,16 @@ a{
       
       margin: auto;
       position: relative;
-      width: 300px;
-      height: 300px;
+      width: 330px;
+      height: 330px;
+      top: -4px;
+      right: 3px;
   }
 
   .statform {
       margin: 0 auto;
-      width: 300px;
-      height: 300px;
+      width: 305px;
+      height: 305px;
       position: absolute;
   }
 
@@ -687,7 +701,7 @@ a{
 .aboutMe {
   width: 300px;
   position: relative;
-  right: 60px;
+  right: 55px;
 }
 
 .meContainer {
@@ -929,14 +943,10 @@ footer {
   min-width: 330px;
 }
 
-.nexTimeSplash_pic{
-  border: 0.3rem outset black;
-  border-radius: 5px;
-  max-width: 330px;
-}
+
 
 .codepen_disc {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 #codepen_proj_link_icon {
@@ -1245,7 +1255,7 @@ width: 10%;
 
   .aboutMe {
     position: relative;
-    right: 0px;
+    right: -7px;
   }
 
   .blurb-container {
@@ -1261,12 +1271,16 @@ width: 10%;
 
   .graph-bg {
     position: relative;
-    right: 20px;
+    right: 8px;
   }
 
   .labelContainer {
     position: relative;
-    right: -10px;
+    right: 5px;
+  }
+
+  .nexTimeSplash_pic{
+    margin-left: 7px;
   }
 }
 
@@ -1297,7 +1311,7 @@ width: 10%;
 
   .blurb-container {
     position: relative;
-    right: 5px;
+    right: -2px;
     top: 0px;
   }
 }
@@ -1333,7 +1347,7 @@ width: 10%;
   .graph-bg {
     position: relative;
     right: 0px;
-    top:05px;
+    top: 5px;
   }
 
   .my-sticky {
