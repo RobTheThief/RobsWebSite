@@ -89,7 +89,7 @@
   <div class = "items-center flex text-right w-full" style = "width: 20%;">
     <div class="w-full align-right overlay_container tooltip">
         <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
-        <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+        <a href="https://www.linkedin.com/in/rob-gannon-software-developer/" target="_blank"><div class="overlay"></div></a>
         <span class="tooltip_text">Linkedin</span>
     </div>
     <div class="w-full align-right overlay_container tooltip">

@@ -39,7 +39,7 @@
         <a href="contact.php" class="buttonCustom font-semibold px-4 overlay_container">Contact<div class="overlay"></div></a>
         <a href="index.html" class = "logoContainer"><img src = "img/rgLogo.png" class = "logo"><div class="overlay"></div></a>
 
-      </nav>
+    </nav>
 
 
 
@@ -51,8 +51,8 @@
     </div>
 
     
-    <div class="mt-20 lg:mt-5" >
-      <div class=" github_link_container items-center text-center flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
+    <div class="mt-20 lg:mt-5 flex" >
+      <div class=" github_link_container inline-block flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
         <img class = " githublogo " src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="
           height="35" width="35">
         <a href="https://github.com/RobTheThief" class="text-center pt-1 mx-2 text-xl github_link link_line_effect" target="_blank" style="color: black" >RobTheThief GitHub</a>
@@ -62,42 +62,49 @@
 
     <!--Project Menu-->
     <div class="flex text-right proj_menu">
-      <div class=" flex flex-col proj_index_pics_container">
-        <a href="#nexTime_bar" class="inline-block mx-5 my-2 text-center proj_index">nexTime App</a>
-        <a class = " inline-block overlay_container" href="#nexTime_bar">
-          <img src="./img/nextimeimg_a.png" class="proj_index_border" height ="300" width="200" alt="nexTime App">
+
+      <div class="flex flex-col md:flex-row lg:flex-row m-auto">
+        <div class=" flex flex-col proj_index_pics_container">
+          <a href="#nexTime_bar" class="inline-block mx-5 my-2 text-center proj_index">nexTime App</a>
+          <a class = " inline-block overlay_container" href="#nexTime_bar">
+            <img src="./img/nextimeimg_a.png" class="proj_index_border" height ="300" width="200" alt="nexTime App">
+            <div class="overlay proj_index_border"></div>
+          </a>
+        </div>
+        <div class=" flex flex-col proj_index_pics_container">
+          <a href="#crudy_bar" class="inline-block mx-5 my-2 text-center proj_index">CRUDy-Quotes API</a>
+          <a class = " inline-block overlay_container" href="#crudy_bar">
+            <img src="./img/CRUDy-Quotes-Graphic.png" class="proj_index_border" height ="300" width="195" alt="crudy-quotes" style="border-width: 2px;">
+            <div class="overlay proj_index_border" style="border-width: 2px;"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row lg:flex-row m-auto">
+        <div class=" flex flex-col proj_index_pics_container">
+          <a href="#wander_bar" class="inline-block mx-5 my-2 text-center proj_index">Wanderlust</a>
+          <a class = " inline-block overlay_container" href="#wander_bar">
+            <img src="./img/wanderlust-Feature.png" class="proj_index_border" height ="300" width="195" alt="Wanderlust">
+            <div class="overlay proj_index_border"></div>
+          </a>
+        </div>
+        <div class=" flex flex-col proj_index_pics_container">
+          <a href="#codepen_bar" class="inline-block mx-5 my-2 text-center proj_index">Nav Bar Codepen</a>
+        <a class = " inline-block overlay_container" href="#codepen_bar">
+          <img src="./img/navbar-codepen-feature.png" class="proj_index_border" height ="300" width="195" alt="Nav Bar Codepen">
           <div class="overlay proj_index_border"></div>
         </a>
+        </div>
+        <div class=" flex flex-col proj_index_pics_container">
+          <a href="#calc_bar" class="inline-block mx-5 my-2 text-center proj_index">Robulator</a>
+          <a class = " inline-block overlay_container" href="#calc_bar">
+            <img src="./img/calc-feature.png" class="proj_index_border" height ="300" width="195" alt="Robulator" >
+            <div class="overlay proj_index_border"></div>
+          </a>
+        </div>
       </div>
-      <div class=" flex flex-col proj_index_pics_container">
-        <a href="#crudy_bar" class="inline-block mx-5 my-2 text-center proj_index">CRUDy-Quotes API</a>
-        <a class = " inline-block overlay_container" href="#crudy_bar">
-          <img src="./img/CRUDy-Quotes-Graphic.png" class="proj_index_border" height ="300" width="195" alt="crudy-quotes" style="border-width: 2px;">
-          <div class="overlay proj_index_border" style="border-width: 2px;"></div>
-        </a>
-      </div>
-      <div class=" flex flex-col proj_index_pics_container">
-        <a href="#wander_bar" class="inline-block mx-5 my-2 text-center proj_index">Wanderlust</a>
-        <a class = " inline-block overlay_container" href="#wander_bar">
-          <img src="./img/wanderlust-Feature.png" class="proj_index_border" height ="300" width="195" alt="Wanderlust">
-          <div class="overlay proj_index_border"></div>
-        </a>
-      </div>
-      <div class=" flex flex-col proj_index_pics_container">
-        <a href="#codepen_bar" class="inline-block mx-5 my-2 text-center proj_index">Nav Bar Codepen</a>
-      <a class = " inline-block overlay_container" href="#codepen_bar">
-        <img src="./img/navbar-codepen-feature.png" class="proj_index_border" height ="300" width="195" alt="Nav Bar Codepen">
-        <div class="overlay proj_index_border"></div>
-      </a>
-      </div>
-      <div class=" flex flex-col proj_index_pics_container">
-        <a href="#calc_bar" class="inline-block mx-5 my-2 text-center proj_index">Robulator</a>
-        <a class = " inline-block overlay_container" href="#calc_bar">
-          <img src="./img/calc-feature.png" class="proj_index_border" height ="300" width="195" alt="Robulator" >
-          <div class="overlay proj_index_border"></div>
-        </a>
-      </div>
-    </div>
+
+  </div>
      
   <br></br>
   <br></br>
@@ -106,17 +113,18 @@
   <br></br>
 
   <!--****** NEXTIME PROJECT ***************-->
-  <div class = "nexTimeProj_div flex p-4 items-left sm:items-center">
-    <img class="inline-block nexTimeSplash_pic" src="img/nextimeimg_a.png" alt="nexTime splash" height="800" width="600">
+  <div class = "nexTimeProj_div flex p-4 ">
+    <img class=" nexTimeSplash_pic" src="img/nextimeimg_a.png" alt="nexTime splash" height="800" width="600">
     <div class = "nexTime_container flex items-center inline-block">
      
-      <p class="invisible lg:visible text-left text-xl w-full ml-40"><u><b>nexTime Android App</b></u></p>
-      <div class = "flex flex-col sm:flex-row ml-0 lg:ml-8 pt-0 lg:pt-4 lg:pb-15 text-center inline-block">
+      <p class="nexTime_heading text-left text-2xl w-full ml-40"><u><b>nexTime Android App</b></u></p>
+      <div class = "flex nexTime_feature_and_vid pl-4 ml-0 lg:ml-8 pt-0 lg:pt-4 lg:pb-15 text-center inline-block">
         <img class="m-4 inline-block nexTimeSplash_pic mb-6 lg:mb-4" src="img/nexTime_featureGraphic.png" alt="nexTime feature graphic">
         <iframe class="m-4 nexTimeSplash_pic " width="330" height="168" src="https://www.youtube.com/embed/x5bcwPOAnP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-  
-      <div class="pb-4 lg:pl-20 lg:pr-10 pl-5 pr-5 text-left sm:text-center inline-block nexTime_disc">
+      
+      <p class="nexTime_heading_2 text-2xl w-full m-auto"><u><b>nexTime Android App</b></u></p>
+      <div class="pb-4 lg:pl-20 lg:pr-10 pl-5 pr-5 inline-block nexTime_disc">
         <p class="align-text-top text-justify">
           <b>
             <br>nexTime is an android reminder app based on location and is built using React Native, with a custom geofencing method. As it uses backgroung location checking, permission is required from Google.  The permissions request is still pending, however, A release APK is available from the Github repository but is only for demo purposes as the location service will not work yet.<br><br>
@@ -129,7 +137,7 @@
           </b>
         </p>
         <br>
-        <div class=" items-center text-center flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
+        <div class=" items-center text-center flex-row flex pb-4 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
           <img class = " githublogo " src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="
             height="30" width="30">
           <a href="https://github.com/RobTheThief/nexTime" class="text-center pt-1 mx-2 sm:text-xl lg:text-base github_link link_line_effect" target="_blank" style="color: black" >Repository</a>
@@ -149,7 +157,7 @@
   <!--************************* CRUDy Quotes Project ********************-->
   <div class = "proj_div flex p-4 items-center text-center">
     <div class="crud_wrap">
-            <h1 id = "crud_head"><b>CRUDy-Quotes API</h1>
+            <h1 id = "crud_head" ><b>CRUDy-Quotes API</h1>
             <form>
               <input id = 'quote_name' type="text" placeholder="Name">
               <input id = 'quote' type="text" placeholder="Quote">
@@ -163,31 +171,31 @@
             <br></br>
             <h2 id = "list_head"> Quotes </h2>
               <span id = 'list_quotes'></span>
-      </div>
+    </div>
 
-      <div class="p-4 pl-6 lg:pl-20 inline-block crudy_description">
-        <p class="text-left text-xl"><b><u>CRUDy Quotes API Project</u></b></p>
-        <p class="align-text-top text-justify">
-          <br>To learn more about HTTP requests I decided to create my own API.
-              This involved Node.js, Express to run the server and create the
-              routes, and MongoDB to manage the JSON database. As my current
-              hosting does not support VPS, Heroku was used to host the API.<br>
-              The server renders HTML and can be accesed through the link below:<br>    
-              <a href="https://crudy-quotes.herokuapp.com/" target="_blank" class = "heroku_link">https://crudy-quotes.herokuapp.com/</a>
-              <br>
-              Queries can also be sent through a third parties as CORS is allowed.
-              <br>It uses HTTP/1.1 although it was initially intended to have HTTP/2
-              but an SSL certificate was required for Heroku.
-          <br>
-        </p>
+    <div class="p-4 pl-6 xl:pl-20 inline-block crudy_description">
+      <p class="text-left text-2xl"><b><u>CRUDy Quotes API Project</u></b></p>
+      <p class="align-text-top text-justify">
+        <br>To learn more about HTTP requests I decided to create my own API.
+            This involved Node.js, Express to run the server and create the
+            routes, and MongoDB to manage the JSON database. As my current
+            hosting does not support VPS, Heroku was used to host the API.<br>
+            The server renders HTML and can be accesed through the link below:<br>    
+            <a href="https://crudy-quotes.herokuapp.com/" target="_blank" class = "heroku_link">https://crudy-quotes.herokuapp.com/</a>
+            <br>
+            Queries can also be sent through a third parties as CORS is allowed.
+            <br>It uses HTTP/1.1 although it was initially intended to have HTTP/2
+            but an SSL certificate was required for Heroku.
         <br>
-        <div class=" items-center text-center flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
-          <img class = " githublogo " src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="
-            height="30" width="30">
-          <a href="https://github.com/RobTheThief/CRUDy-Quotes.git" class="text-center pt-1 mx-2 sm:text-xl lg:text-base github_link link_line_effect" target="_blank" style="color: black" >Repository</a>
-          <img class = " link_logo" src="img/link-icon.png" height="25" width="25">
-        </div>
+      </p>
+      <br>
+      <div class=" items-center text-center flex-row flex pb-6 pt-10 sm:pt-0 lg:pt-0 md:pt-0 ">
+        <img class = " githublogo " src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="
+          height="30" width="30">
+        <a href="https://github.com/RobTheThief/CRUDy-Quotes.git" class="text-center pt-1 mx-2 sm:text-xl lg:text-base github_link link_line_effect" target="_blank" style="color: black" >Repository</a>
+        <img class = " link_logo" src="img/link-icon.png" height="25" width="25">
       </div>
+    </div>
   </div>
 
   <br></br>
@@ -245,8 +253,8 @@
     </div>
 
 
-    <div class="p-4 pl-6 lg:pl-20 inline-block wander_disc">
-      <p class="text-left text-xl"><u>Wanderlust Codecademy Project</u></p>
+    <div class="p-4 pl-6 xl:pl-20 inline-block wander_disc">
+      <p class="text-left text-2xl"><u><b>Wanderlust Codecademy Project</b></u></p>
       <p class="align-text-top text-justify">
         <br>In this project I gathered data from REST API's about a locations
             attractions and weather using AJAX Functions and rendered using
@@ -277,8 +285,8 @@
   <!--****** CODEPEN PROJECT ***************-->
   <div class = "proj_div flex p-4 pl-4 lg:pl-2 items-center text-center">
     <img class="inline-block navbar1_pic" src="img/navbar1CodepenPic.png" alt="Nav Bar and Footer Codepen Pic" height="800" width="600">
-    <div class="p-4 pl-6 lg:pl-20 inline-block codepen_disc">
-      <p class="text-left text-xl"><u>Nav Bar and Footer Codepen</u></p>
+    <div class="p-4 pl-6 xl:pl-20 inline-block codepen_disc">
+      <p class="text-left text-2xl"><u><b>Nav Bar and Footer Codepen</b></u></p>
       <p class="align-text-top text-justify">
         <br>This is my first codepen project.  I basically took the nav bar and 
             footer from this website but translated the TailWindCSS into vanilla 
@@ -311,7 +319,7 @@
   <br></br>
 
   <!-- PROJECT CALCULATOR -->
-  <div class = "proj_div flex md:flex-col lg:flex-row pl-6 text-center">
+  <div class = "proj_div flex md:flex-col lg:flex-row pl-2 text-center">
     <div class = "calc_div inline-block">
       <br>
       <h1 class=" calc_title font-serif font-bold text-xl text-left">ROBULATOR</h1>
@@ -381,7 +389,7 @@
 
     <div class = "p-4 pl-2 lg:pl-20 pt-0 inline-block align-text-top text-justify calc_disc">
       <p>
-        <span class="text-xl underline text-justify"><br>Robulator!</span><br><br>
+        <span class="text-2xl text-justify"><br><u><b>Robulator!</u></b></span><br><br>
           After learning the basics of CSS, HTML and JavaScript
           I decided that my first project, should be a calculator. 
           The only framework used was TailWindCSS.<br></br>
@@ -431,7 +439,7 @@
     <div class = "items-center flex text-right w-full" style = "width: 20%;">
       <div class="w-full align-right overlay_container tooltip">
           <img src="img/linkedinWhite.png" alt="Linkedin" class = "pb-1" height="23" width="23" align = "right">
-          <a href="https://www.linkedin.com/in/robert-gannon-4a1b18149/" target="_blank"><div class="overlay"></div></a>
+          <a href="https://www.linkedin.com/in/rob-gannon-software-developer/" target="_blank"><div class="overlay"></div></a>
           <span class="tooltip_text">Linkedin</span>
       </div>
       <div class="w-full align-right overlay_container tooltip">
