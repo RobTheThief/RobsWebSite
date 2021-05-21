@@ -123,8 +123,9 @@ a {
 }
 
 .proj_index_pics_container {
-  margin: 30px;
+  margin: auto;
   min-width: 195px;
+  padding: 0 30px 0 30px;
 }
 
 .proj_index_border {
