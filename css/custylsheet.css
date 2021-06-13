@@ -137,6 +137,7 @@ a {
 .proj_menu {
   flex-direction: row;
   margin: 0 auto;
+  max-width: 870px;
 }
 
 #back_to_top_container {
@@ -173,6 +174,20 @@ a {
 
 #topButton:hover {
   opacity: 1;
+}
+
+/* **************Restockr******************** */
+
+.restockr_description {
+  height: 522px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.restockr_screenshot {
+  border: 0.3rem outset black;
+  border-radius: 5px;
+  min-width: 330px;
 }
 
 /************Wanderlust*****************/
@@ -1427,6 +1442,11 @@ footer {
     position: relative;
     right: -2px;
     top: 0px;
+  }
+
+  .restockr_description {
+    height: 400px;
+    margin-top: 20px;
   }
 }
 
