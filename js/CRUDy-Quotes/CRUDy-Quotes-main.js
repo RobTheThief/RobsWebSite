@@ -5,7 +5,7 @@ const update1Quote  = document.querySelector('#update_one_quote')
 const listQuotesBtn = document.querySelector('#list_quotes_btn')
 
 //Lists quotes on load
-//printQuotesFunc();
+printQuotesFunc();
 
 //lists quotes when button clicked
 listQuotesBtn.addEventListener('click', () => {
