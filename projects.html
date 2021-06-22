@@ -148,7 +148,7 @@
   <br></br>
   <br></br>
 
-  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "restockr_bar"></div>
+  <div class="proj_break border-4 border-l-0 border-r-0 w-full" id = "nexTime_bar"></div>
   <br></br>
   <br></br>
 
@@ -513,7 +513,6 @@
     <script type="text/javascript">
 
       //Back to Top Button
-      var topButton = document.getElementById("topButton");
 
       function backtoTop() {
         document.body.scrollTop = 0;
@@ -522,9 +521,9 @@
 
       function showHideTopButton() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
-          back_to_top_container.style.display = "block";
+          back_to_top_container.style.opacity = 1;
         } else {
-          back_to_top_container.style.display = "none";
+          back_to_top_container.style.opacity = 0;
         }
       }
 

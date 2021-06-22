@@ -33,6 +33,14 @@ a {
   transition: all 0.3s linear;
 }
 
+hr {
+  box-sizing: content-box;
+  height: 0;
+  width: 70%;
+  overflow: visible;
+  border-color: #9e9e9e;
+}
+
 .link_line_effect :hover {
   color: #222;
 }
@@ -141,7 +149,7 @@ a {
 }
 
 #back_to_top_container {
-  display: none;
+  opacity: 0;
   position: fixed;
   height: 50px;
   width: 50px;
@@ -151,6 +159,7 @@ a {
   outline: none;
   background-size: 50px 50px;
   border-radius: 4px;
+  transition: opacity ease 0.8s;
 }
 
 #topButton {
@@ -780,7 +789,7 @@ li.label7 {
   position: relative;
   right: -55px;
   width: 310px;
-  top: -10px;
+  top: 30px;
 }
 
 #blurb {
@@ -792,7 +801,7 @@ li.label7 {
 .borderTrans {
   border: 4px solid #00ced1;
   padding: 10px;
-  border-radius: 100px;
+  border-radius: 0px;
   min-width: 200px;
   min-height: 200px;
   max-width: 200px;
@@ -801,20 +810,19 @@ li.label7 {
   background: url("../img/Thief2.jpg") no-repeat;
   background-position: -170% 40%;
   transition: 0.8s ease;
-  right: 10px;
 }
 
 .borderTrans:hover {
-  border-radius: 0px;
+  border-radius: 100px;
   background-position: 42% 40%;
-  transform: border-radius;
-  transform: background-position;
 }
 
 .borderTransText {
   font-weight: 900;
   opacity: 0;
-  transition: 1.5s ease;
+  transition: 0.8s ease-in-out;
+  position: relative;
+  top: 0px;
 }
 
 .borderTrans:hover .borderTransText {
@@ -822,8 +830,7 @@ li.label7 {
   color: #00ced1;
   text-shadow: 1px 1px black;
   font-size: 16px;
-  transform: opacity;
-  transition: 0.5s;
+  top: 55px;
 }
 
 .border_trans_link:hover {
@@ -834,7 +841,6 @@ li.label7 {
   top: 0px;
   left: -50px;
   opacity: 0;
-  transform: top;
 }
 
 .transBorderHead {
@@ -1384,19 +1390,14 @@ footer {
   }
 
   .meContainer {
-    position: relative;
-    right: 0px;
   }
 
   .aboutMe {
-    position: relative;
-    right: -7px;
+    right: 0px;
   }
 
   .blurb-container {
-    position: relative;
-    right: -5px;
-    top: -10px;
+    right: 0px;
   }
 
   .graphNlabels {
@@ -1434,13 +1435,7 @@ footer {
 
   .graph-bg {
     position: relative;
-    right: 0px;
-    top: 0px;
-  }
-
-  .blurb-container {
-    position: relative;
-    right: -2px;
+    left: 10px;
     top: 0px;
   }
 
