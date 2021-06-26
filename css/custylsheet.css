@@ -470,7 +470,7 @@ li {
   width: 270px;
   min-width: 200px;
   position: relative;
-  right: -47px;
+  left: 20px;
 }
 
 li {
@@ -533,9 +533,8 @@ li span {
   min-width: 322px;
   height: 322px;
   background-image: url(../img/bggraph.png);
+  margin-right: 70px;
   position: relative;
-  right: 70px;
-  top: 5px;
 }
 
 .graphContainer {
@@ -762,8 +761,9 @@ li.label7 {
 }
 
 .aboutHeading {
-  font-family: "Raleway", sans-serif;
+  font-family: "" Raleway ", sans-serif";
   font-size: 30px;
+  font-weight: 500;
   height: auto;
 }
 
@@ -777,8 +777,9 @@ li.label7 {
 
 .aboutMe {
   width: 300px;
-  position: relative;
-  right: 55px;
+  margin-left: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 .meContainer {
@@ -786,15 +787,12 @@ li.label7 {
 }
 
 .blurb-container {
-  position: relative;
-  right: -55px;
-  width: 310px;
-  top: 30px;
+  margin-right: 70px;
 }
 
 #blurb {
-  max-width: 260px;
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 300px;
   text-align: justify;
 }
 
@@ -1257,9 +1255,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1023px) {
-}
-
 @media only screen and (max-width: 910px) {
   .wander_div {
     flex-direction: column;
@@ -1389,35 +1384,12 @@ footer {
     }
   }
 
-  .aboutMe {
-    right: 0px;
-  }
-
-  .blurb-container {
-    right: 0px;
-  }
-
-  .graphNlabels {
-    position: relative;
-    right: 0px;
-  }
-
-  .graph-bg {
-    position: relative;
-    right: 8px;
-  }
-
-  .labelContainer {
-    position: relative;
-    right: 5px;
-  }
-
   .nexTime_feature_and_vid {
     flex-direction: column;
   }
 }
 
-@media only screen and (max-width: 604px) {
+@media only screen and (max-width: 726px) {
   .meContainer {
     flex-direction: column;
   }
@@ -1426,16 +1398,26 @@ footer {
     flex-direction: column;
   }
 
-  #blurb {
-    text-align: justify;
+  .aboutMe {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .blurb-container {
+    margin-right: 0px;
   }
 
   .graph-bg {
-    position: relative;
-    left: 10px;
-    top: 0px;
+    margin-right: 0px;
+    left: 20px;
   }
 
+  .labelContainer {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 604px) {
   .restockr_description {
     height: 400px;
     margin-top: 20px;
@@ -1464,16 +1446,6 @@ footer {
 
   .dropdown-container {
     width: 420px;
-  }
-
-  .graphNlabels {
-    left: 0;
-  }
-
-  .graph-bg {
-    position: relative;
-    right: 0px;
-    top: 5px;
   }
 
   .my-sticky {
